@@ -5,21 +5,17 @@ using UnityEngine.UI;
 
 public class PlayerControl : MonoBehaviour
 {
-
-    //Components
-    public Rigidbody2D rb;
+    public Rigidbody2D _rb;
     public Camera cam;
 
-    // Player
-    public float moveSpeed = 5f;
-    Vector2 movement;
-    Vector2 mousePos;
+    Vector2 _movement;
+    Vector2 mousePosition;
+    public float _speed;
+  
 
-    //private Vector3 moveDelta;
-    //public float _speed;
 
     private float _currentHP;
-    private float _maxHP = 100;
+    private float _maxHP = 100f;
 
  
     public Text playerHPDisplay;
@@ -34,11 +30,10 @@ public class PlayerControl : MonoBehaviour
 
     void Update()
     {
+        _movement.x = Input.GetAxisRaw("Horizontal");
+        _movement.y = Input.GetAxisRaw("Vertical");
 
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
-        mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-
+        mousePosition = cam.ScreenToWorldPoint(Input.mousePosition);
         DisplayHealth();
     }
 
@@ -46,23 +41,20 @@ public class PlayerControl : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        // movement
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        _rb.MovePosition(_rb.position + _movement * _speed * Time.deltaTime);
 
-        // Mousae position. player faces mouse position
-        // diagonal movement should be the same speed as vertical 
-        Vector2 lookDir = mousePos - rb.position;
-        float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
-        rb.rotation = angle;
-
-
-        //float x = Input.GetAxisRaw("Horizontal");
-        //float y = Input.GetAxisRaw("Vertical");
-
-        //moveDelta = new Vector3(x,y,0);
-
-        //transform.Translate(moveDelta * _speed * Time.deltaTime);
+        LookAtDir();
     }
+
+    void LookAtDir()
+    {
+
+        Vector2 lookAtDir = mousePosition - _rb.position;
+
+        float angle = Mathf.Atan2(lookAtDir.y, lookAtDir.x) * Mathf.Rad2Deg - 90f;
+        _rb.rotation = angle;
+    }
+
 
     void StartHP()
     {
