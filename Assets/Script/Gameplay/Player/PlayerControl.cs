@@ -11,8 +11,8 @@ public class PlayerControl : MonoBehaviour
     Vector2 _movement;
     Vector2 mousePosition;
     public float _speed;
-  
 
+ 
 
     private float _currentHP;
     private float _maxHP = 100f;
@@ -26,6 +26,8 @@ public class PlayerControl : MonoBehaviour
     {
         StartHP();
         Debug.Log(_currentHP);
+
+ 
     }
 
     void Update()
