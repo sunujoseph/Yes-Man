@@ -18,7 +18,7 @@ public class PlayerControl : MonoBehaviour
     private float _maxHP = 100f;
 
  
-    public Text playerHPDisplay;
+    
     
 
     // Start is called before the first frame update
@@ -60,7 +60,10 @@ public class PlayerControl : MonoBehaviour
 
     void StartHP()
     {
-        _currentHP = _maxHP; 
+        _currentHP = _maxHP;
+        UIControl.instance.playerHPText.text = _currentHP.ToString();
+        UIControl.instance._healthSlider.value = _currentHP;
+        UIControl.instance._healthSlider.maxValue = _maxHP;
     }
 
     void TakeDamage(float dmg)
@@ -69,14 +72,9 @@ public class PlayerControl : MonoBehaviour
     }
 
     void DisplayHealth()
-    {
-        if (playerHPDisplay != null)
-        {
-            //Display current HP
-            playerHPDisplay.text = _currentHP.ToString();
-        }
-
-
+    {       
+        UIControl.instance.playerHPText.text = _currentHP.ToString();
+        UIControl.instance._healthSlider.value = _currentHP;
     }
     
 
