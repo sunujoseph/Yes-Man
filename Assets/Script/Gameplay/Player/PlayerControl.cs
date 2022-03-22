@@ -19,6 +19,16 @@ public class PlayerControl : MonoBehaviour
 
     public bool isDead = false;
 
+    //for Dash
+    private float activeMoveSpeed;
+    public float dashSpeed;
+
+    public float dashLength = 0.5f;
+    public float dashCooldown = 1f;
+
+    private float dashCounter;
+    private float dashCoolCounter;
+
     private void Awake()
     {
         if (_rb == null)
@@ -33,13 +43,15 @@ public class PlayerControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
- 
+        activeMoveSpeed = _speed;
     }
 
     void Update()
     {
         _movement.x = Input.GetAxisRaw("Horizontal");
         _movement.y = Input.GetAxisRaw("Vertical");
+
+        Dash();
 
         mousePosition = cam.ScreenToWorldPoint(Input.mousePosition);
         DisplayHealth();
@@ -52,9 +64,37 @@ public class PlayerControl : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        _rb.MovePosition(_rb.position + _movement * _speed * Time.deltaTime);
+        _rb.MovePosition(_rb.position + _movement * activeMoveSpeed * Time.deltaTime);
 
         LookAtDir();
+    }
+
+    void Dash()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (dashCoolCounter <= 0 && dashCounter <= 0)
+            {
+                activeMoveSpeed = dashSpeed;
+                dashCounter = dashLength;
+            }
+        }
+
+        if (dashCounter > 0)
+        {
+            dashCounter -= Time.deltaTime;
+
+            if (dashCounter <= 0)
+            {
+                activeMoveSpeed = _speed;
+                dashCoolCounter = dashCooldown; 
+            }
+        }
+
+        if (dashCoolCounter > 0)
+        {
+            dashCoolCounter -= Time.deltaTime;
+        }
     }
 
     void LookAtDir()
