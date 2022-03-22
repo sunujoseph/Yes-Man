@@ -21,7 +21,7 @@ public class Bullet : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
 
-            collision.gameObject.GetComponent<Enemy>().TakeDamage(_bulletDamage); ;
+            collision.gameObject.GetComponent<Enemy>().DealDamage(_bulletDamage); ;
             
         }
 
