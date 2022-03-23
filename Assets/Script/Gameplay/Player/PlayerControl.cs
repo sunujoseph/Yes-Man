@@ -14,8 +14,12 @@ public class PlayerControl : MonoBehaviour
     Vector2 mousePosition;
 
     public float _speed;
+
     public float _currentHP = 100.0f;
     private float _maxHP = 100.0f;
+
+    public float _currentMana = 100.0f;
+    private float _maxMana = 100.0f;
 
     public bool isDead = false;
 
@@ -36,7 +40,7 @@ public class PlayerControl : MonoBehaviour
             _rb = GetComponent<Rigidbody2D>();
         }
 
-        StartHP();
+       
     }
 
 
@@ -44,6 +48,8 @@ public class PlayerControl : MonoBehaviour
     void Start()
     {
         activeMoveSpeed = _speed;
+        StartHP();
+        StartMana();
     }
 
     void Update()
@@ -55,6 +61,7 @@ public class PlayerControl : MonoBehaviour
 
         mousePosition = cam.ScreenToWorldPoint(Input.mousePosition);
         DisplayHealth();
+        DisplayMana();
 
         Die();
         
@@ -110,9 +117,15 @@ public class PlayerControl : MonoBehaviour
     void StartHP()
     {
         _currentHP = _maxHP;
-        //UIControl.instance.playerHPText.text = _currentHP.ToString();
-       // UIControl.instance._healthSlider.value = _currentHP;
-        //UIControl.instance._healthSlider.maxValue = _maxHP;
+        UIControl.instance._playerHPText.text = _currentHP.ToString();
+        
+
+    }void StartMana()
+    {
+        _currentMana = _maxMana;
+        UIControl.instance._playerHPText.text = _currentMana.ToString();
+       
+
     }
 
     public void TakeDamage(float dmg)
@@ -145,8 +158,12 @@ public class PlayerControl : MonoBehaviour
 
     void DisplayHealth()
     {       
-        //UIControl.instance.playerHPText.text = _currentHP.ToString();
-        //UIControl.instance._healthSlider.value = _currentHP;
+        UIControl.instance._playerHPText.text = _currentHP.ToString();
+        
     }
-   
+    void DisplayMana()
+    {
+        UIControl.instance._playerManaText.text = _currentMana.ToString();
+        
+    }
 }
