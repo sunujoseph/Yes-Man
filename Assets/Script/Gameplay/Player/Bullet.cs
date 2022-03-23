@@ -24,6 +24,12 @@ public class Bullet : MonoBehaviour
             collision.gameObject.GetComponent<Enemy>().DealDamage(_bulletDamage); ;
             
         }
+        if (collision.gameObject.name == "Barrel")
+        {
+
+            collision.gameObject.GetComponent<BarrelBehavior>().DealDamage(_bulletDamage); ;
+
+        }
 
         Destroy(gameObject);
     }
