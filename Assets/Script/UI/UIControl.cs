@@ -9,11 +9,17 @@ public class UIControl : MonoBehaviour
 
     public Text _playerHPText; 
     public Text _playerManaText;
+
     
+
+
+
     void Awake()
     {
         instance = this;
         
     }
+
     
+
 }

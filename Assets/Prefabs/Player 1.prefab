@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 9074380548955686983}
   - component: {fileID: 9074380548955687000}
   - component: {fileID: 9074380548955687001}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -239,6 +239,8 @@ MonoBehaviour:
   _speed: 10
   _currentHP: 100
   _currentMana: 100
+  _hp: {fileID: 0}
+  _mana: {fileID: 0}
   isDead: 0
   dashSpeed: 20
   dashLength: 0.5
