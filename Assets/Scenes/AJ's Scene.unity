@@ -383,7 +383,7 @@ CanvasRenderer:
 --- !u!4 &868984444 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5506541251465519987, guid: b9861670027ae8e4fb626463db12b8d3, type: 3}
-  m_PrefabInstance: {fileID: 5707510742856932438}
+  m_PrefabInstance: {fileID: 411649932220561748}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &958389513
 GameObject:
@@ -1152,7 +1152,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2117132046}
   m_CullTransparentMesh: 1
---- !u!1001 &5707510742856932438
+--- !u!1001 &411649932220561748
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
