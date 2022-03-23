@@ -21,12 +21,20 @@ public class Bullet : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
 
-            collision.gameObject.GetComponent<Enemy>().DealDamage(_bulletDamage); ;
-            
+            collision.gameObject.GetComponent<Enemy>().DealDamage(_bulletDamage);
+
+            Destroy(this.gameObject);
+        }
+        if (collision.gameObject.name == "Barrel")
+        {
+
+            collision.gameObject.GetComponent<BarrelBehavior>().DealDamage(_bulletDamage); ;
+
         }
 
         Destroy(gameObject);
     }
+    
 
     void Update()
     {

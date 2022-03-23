@@ -95,7 +95,7 @@ public class PlayerControl : MonoBehaviour
             {
                 activeMoveSpeed = _speed;
                 dashCoolCounter = dashCooldown; 
-            }
+            }   
         }
 
         if (dashCoolCounter > 0)

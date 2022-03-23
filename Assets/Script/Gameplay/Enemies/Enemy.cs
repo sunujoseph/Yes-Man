@@ -9,14 +9,13 @@ public class Enemy : MonoBehaviour
     Rigidbody2D _rb;
 
 
-
     public float enemyHealth = 10.0f;
     float maxHealth = 10.0f;
 
     public float speed;
     public float lineOfSite;
 
-    Vector3 direction;
+     Vector3 direction;
 
 
 
@@ -24,11 +23,16 @@ public class Enemy : MonoBehaviour
     {
         ResetHeal();
         _rb = GetComponent<Rigidbody2D>();
+
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+
     }
 
     private void Update()
     {
-        direction = player.position - transform.position;
+        direction = player.transform.position - transform.position;
+
+      
     }
 
     private void FixedUpdate()
@@ -37,9 +41,9 @@ public class Enemy : MonoBehaviour
         MoveTowardPlayer();
     }
 
-    void MoveTowardPlayer()
+    public virtual void MoveTowardPlayer()
     {
-        float distanceFromPlayer = Vector2.Distance(player.position, transform.position);
+        float distanceFromPlayer = Vector2.Distance(player.transform.position, transform.position);
 
 
         if (distanceFromPlayer < lineOfSite)
@@ -48,13 +52,12 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    void LookTowardPlayer()
+    public virtual void LookTowardPlayer()
     {
-
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         _rb.rotation = angle;
         direction.Normalize();
-        
+
     }
 
     void ResetHeal()
