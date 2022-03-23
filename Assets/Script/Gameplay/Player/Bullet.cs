@@ -21,12 +21,13 @@ public class Bullet : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
 
-            collision.gameObject.GetComponent<Enemy>().DealDamage(_bulletDamage); ;
-            
-        }
+            collision.gameObject.GetComponent<Enemy>().DealDamage(_bulletDamage);
 
-        Destroy(gameObject);
+            Destroy(this.gameObject);
+        }
+       
     }
+    
 
     void Update()
     {
