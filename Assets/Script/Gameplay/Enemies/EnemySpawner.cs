@@ -67,8 +67,8 @@ public class EnemySpawner : MonoBehaviour
     {
         int pickEnemy = Random.Range(0, enemySpawner.Count);
 
-        randx = Random.Range(1, 1);
-        randy = Random.Range(1, 1);
+        randx = Random.Range(-30.0f, 30.0f);
+        randy = Random.Range(-30.0f, 30.0f);
 
         whereToSpawn = new Vector2(randx, randy);
 
