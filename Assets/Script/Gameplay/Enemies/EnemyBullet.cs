@@ -22,7 +22,9 @@ public class EnemyBullet : MonoBehaviour
         Destroy(gameObject,2);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
@@ -31,7 +33,6 @@ public class EnemyBullet : MonoBehaviour
 
             Destroy(this.gameObject);
         }
-        
     }
 
 }
