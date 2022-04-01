@@ -434,9 +434,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 415027efd8774094b8a001ccea8bc3a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 868984444}
-  smoothing: 0
-  offset: {x: 0, y: 0, z: 0}
+  player: {fileID: 0}
+  ofset: {x: 0, y: 0, z: 1}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -646,6 +645,9 @@ MonoBehaviour:
   player: {fileID: 0}
   _speed: 10
   _currentHP: 100
+  _currentMana: 100
+  _hp: {fileID: 0}
+  _mana: {fileID: 0}
   isDead: 0
   dashSpeed: 20
   dashLength: 0.5
@@ -753,8 +755,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -5
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.6981132, g: 0.42926082, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 0746d5a0c5d0b6248abb4ee963cd2e8d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -772,8 +774,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1498234970}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.2426, y: -1.9243, z: 0}
-  m_LocalScale: {x: 36.389786, y: 32.62609, z: 1}
+  m_LocalPosition: {x: 0.4, y: -9.6, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -1417,8 +1419,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d24341946bceda242a889675143782d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _healthSlider: {fileID: 2118033367}
-  playerHPText: {fileID: 1514032473}
+  _playerHPText: {fileID: 0}
+  _playerManaText: {fileID: 0}
 --- !u!1 &2118033365
 GameObject:
   m_ObjectHideFlags: 0
