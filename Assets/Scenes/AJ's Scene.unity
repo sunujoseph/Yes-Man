@@ -7275,7 +7275,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9074380548673926315, guid: 2a678c73e81c9524b86cbeeba8d0b78e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.8687115
+      value: -3.83
       objectReference: {fileID: 0}
     - target: {fileID: 9074380548673926315, guid: 2a678c73e81c9524b86cbeeba8d0b78e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7325,6 +7325,26 @@ PrefabInstance:
       propertyPath: _mana
       value: 
       objectReference: {fileID: 1791889254}
+    - target: {fileID: 9074380548955686983, guid: 2a678c73e81c9524b86cbeeba8d0b78e, type: 3}
+      propertyPath: dashSpeed
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 9074380548955686983, guid: 2a678c73e81c9524b86cbeeba8d0b78e, type: 3}
+      propertyPath: dashLength
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 9074380548955687000, guid: 2a678c73e81c9524b86cbeeba8d0b78e, type: 3}
+      propertyPath: m_Size.x
+      value: 0.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 9074380548955687000, guid: 2a678c73e81c9524b86cbeeba8d0b78e, type: 3}
+      propertyPath: m_Size.y
+      value: 0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 9074380548955687000, guid: 2a678c73e81c9524b86cbeeba8d0b78e, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.02
+      objectReference: {fileID: 0}
     - target: {fileID: 9074380548955687001, guid: 2a678c73e81c9524b86cbeeba8d0b78e, type: 3}
       propertyPath: damage
       value: 5
