@@ -56,7 +56,8 @@ public class Enemy : MonoBehaviour
     public virtual void LookTowardPlayer()
     {
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        _rb.rotation = angle;
+        _rb.rotation = angle + 90;
+        
         direction.Normalize();
 
     }
