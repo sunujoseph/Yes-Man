@@ -26,7 +26,7 @@ public class EnemyBullet : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-
+            Debug.Log("hit");
             collision.gameObject.GetComponent<PlayerControl>().TakeDamage(damage);
 
             Destroy(this.gameObject);

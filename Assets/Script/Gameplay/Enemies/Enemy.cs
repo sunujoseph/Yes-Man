@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
     public Transform player;
     Rigidbody2D _rb;
 
+    public float damage = 2.0f;
 
     public float enemyHealth = 10.0f;
     float maxHealth = 10.0f;
@@ -91,5 +92,16 @@ public class Enemy : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, lineOfSite);
+    }
+
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
+        {
+            //Do contact damage to player
+            PlayerControl player = collision.gameObject.GetComponent<PlayerControl>();
+            player.TakeDamage(damage);
+        }
     }
 }
