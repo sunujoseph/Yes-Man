@@ -239,8 +239,8 @@ MonoBehaviour:
   _speed: 10
   _currentHP: 100
   _currentMana: 100
-  _hp: {fileID: 0}
-  _mana: {fileID: 0}
+  _hp: {fileID: 2729928860713583412, guid: 8f85183f599278e4f9aed25788e30a74, type: 3}
+  _mana: {fileID: 4995639901046481051, guid: dfad55b5c0823c44ab7e389c31ed2569, type: 3}
   isDead: 0
   dashSpeed: 20
   dashLength: 0.5

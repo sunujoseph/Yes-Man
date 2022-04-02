@@ -149,3 +149,7 @@ MonoBehaviour:
   enemyHealth: 15
   speed: 5
   lineOfSite: 8
+  deathEffect: {fileID: 1761458857357641057, guid: e619da6a266b84940816d20879507683, type: 3}
+  deathEffect2: {fileID: 1761458857357641057, guid: e83922d11e591904ea531418b56f9d63, type: 3}
+  deathEffect3: {fileID: 1761458857357641057, guid: 58931a90eeb81934cbad54c9a0cdf57f, type: 3}
+  deathEffect4: {fileID: 1761458857357641057, guid: 8e598fccb0f62cb498b1ede0cd433bbc, type: 3}

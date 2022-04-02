@@ -4,30 +4,20 @@ using UnityEngine;
 
 public class CameraControl : MonoBehaviour
 {
-    //[SerializeField] Transform target;
-    //public float smoothing;
-    //public Vector3 offset; 
+    [SerializeField] Transform targetView;
 
-    // Update is called once per frame
-    //void FixedUpdate()
-    //{
-    //    Vector3 newPos = Vector3.Lerp(transform.position, target.transform.position + offset, smoothing);
+    [SerializeField] float minX, maxX, minY, maxY;
 
-    //    transform.position = newPos;
-    //}
-
-    public GameObject player;
-    public Vector3 ofset = new Vector3(0, 0, 1);
-    // Start is called before the first frame update
-
-
-    // Update is called once per frame
-    public void FixedUpdate()
+    public Vector3 offset;
+    private void FixedUpdate()
     {
-        if (player)
-        {
-            transform.position = new Vector3(player.transform.position.x + ofset.x, player.transform.position.y + ofset.y, player.transform.position.z + ofset.z);
-        }
+        //Follow target's x position
+        transform.position = targetView.position + offset;
+
+        float cutoffX = Mathf.Clamp(transform.position.x, minX, maxX);
+        float cutoffY = Mathf.Clamp(transform.position.y, minY, maxY);
+
+        transform.position = new Vector3(cutoffX, cutoffY, transform.position.z) + offset;
     }
 }
 

@@ -1,16 +1,22 @@
 fileFormatVersion: 2
-guid: ee14892b479c41645bea75ede4549203
+guid: 417386369ac0630438091b4baa292170
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2953603807795177419
-    second: Pickups-exportcoin 1_0
+      213: -2454631135387727588
+    second: Splatter_0
   - first:
-      213: -6368317979330292062
-    second: Pickups-exportcoin 1_1
+      213: -5919090430122801964
+    second: Splatter_1
   - first:
-      213: 2079625707125804277
-    second: Pickups-exportcoin 1_2
+      213: 1993394545745100425
+    second: Splatter_2
+  - first:
+      213: -1030140325960086638
+    second: Splatter_3
+  - first:
+      213: 9158050845529435922
+    second: Splatter_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -100,34 +106,55 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pickups-exportcoin 1_0
+      name: Splatter_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
+        y: 50
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c19c990dcf56fedd0800000000000000
+      internalID: -2454631135387727588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Splatter_1
+      rect:
+        serializedVersion: 2
+        x: 18
         y: 49
-        width: 19
+        width: 13
         height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 1, y: 0, z: 3, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc76fdaa30f4df820800000000000000
-      internalID: 2953603807795177419
+      spriteID: 4d4cd1f4d9a2bdda0800000000000000
+      internalID: -5919090430122801964
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pickups-exportcoin 1_1
+      name: Splatter_2
       rect:
         serializedVersion: 2
-        x: 23
-        y: 46
-        width: 12
-        height: 17
+        x: 33
+        y: 51
+        width: 14
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -135,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a6d841e9803f97a0800000000000000
-      internalID: -6368317979330292062
+      spriteID: 98e765427c5f9ab10800000000000000
+      internalID: 1993394545745100425
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pickups-exportcoin 1_2
+      name: Splatter_3
       rect:
         serializedVersion: 2
-        x: 42
-        y: 46
-        width: 11
-        height: 17
+        x: 50
+        y: 51
+        width: 14
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,8 +183,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fc0103ff805cdc10800000000000000
-      internalID: 2079625707125804277
+      spriteID: 29b085ad4d434b1f0800000000000000
+      internalID: -1030140325960086638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Splatter_4
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 4
+        width: 44
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f6fbaf8bee71f70800000000000000
+      internalID: 9158050845529435922
       vertices: []
       indices: 
       edges: []

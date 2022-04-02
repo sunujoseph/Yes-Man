@@ -4,15 +4,36 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static AudioManager instance;
+
+    public AudioSource levelMusic;
+    public AudioSource gameOverMusic;
+    public AudioSource winMusic;
+
+    public AudioSource[] sfx;
+
+    private void Awake()
     {
-        
+        instance = this;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void PlayGameOver()
     {
-        
+        levelMusic.Stop();
+
+        gameOverMusic.Play();
+    }
+
+    public void PlayLevelWin()
+    {
+        levelMusic.Stop();
+
+        winMusic.Play();
+    }
+
+    public void PlaySFX(int sfxToPlay)
+    {
+        sfx[sfxToPlay].Stop();
+        sfx[sfxToPlay].Play();
     }
 }

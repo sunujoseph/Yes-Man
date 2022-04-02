@@ -17,7 +17,10 @@ public class Enemy : MonoBehaviour
     public float lineOfSite;
 
      Vector3 direction;
+    //number of enemies that have been killed
+    public int enemyDeathCounter;
 
+   public Transform deathEffect, deathEffect2, deathEffect3, deathEffect4;
 
 
     private void Start()
@@ -31,7 +34,10 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
-        direction = player.transform.position - transform.position;
+        if (enemyHealth > 0 && player != null)
+        {
+            direction = player.transform.position - transform.position;
+        }
 
       
     }
@@ -85,7 +91,16 @@ public class Enemy : MonoBehaviour
     {
         if (enemyHealth <= 0)
         {
+            var boom = Instantiate(deathEffect, transform.position, transform.rotation);
+            var boom2 = Instantiate(deathEffect2, transform.position, transform.rotation);
+            var boom3 = Instantiate(deathEffect3, transform.position, transform.rotation);
+            var boom4 = Instantiate(deathEffect4, transform.position, transform.rotation);
+            Destroy(boom.gameObject, 1);
+            Destroy(boom2.gameObject, 2);
+            Destroy(boom3.gameObject, 3);
+            Destroy(boom4.gameObject, 4);
             Destroy(gameObject);
+            
         }
     }
 
