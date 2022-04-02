@@ -15,8 +15,8 @@ public class PlayerControl : MonoBehaviour
 
     public float _speed;
 
-    public float _currentHP = 10000.0f;
-    private float _maxHP = 10000.0f;
+    public float _currentHP = 100.0f;
+    private float _maxHP = 100.0f;
 
     public float _currentMana = 100.0f;
     private float _maxMana = 100.0f;
