@@ -9,6 +9,7 @@ public class EnemyRange : Enemy
 
     public GameObject arrows;
     public GameObject arrowParent;
+    public float arrowForce = 5f;
 
     Rigidbody2D enemyRB;
     Rigidbody2D _rangeRB;
@@ -59,6 +60,10 @@ public class EnemyRange : Enemy
     {
 
         Instantiate(arrows, arrowParent.transform.position, Quaternion.identity);
+        GameObject bullet = Instantiate(arrows, arrowParent.transform.position, arrowParent.transform.rotation);
+        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+        rb.AddForce(arrowParent.transform.up * arrowForce, ForceMode2D.Impulse);
+
     }
 
     private void OnDrawGizmos()

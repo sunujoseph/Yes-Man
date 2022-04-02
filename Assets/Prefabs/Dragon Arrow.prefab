@@ -98,8 +98,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 277800356200113314, guid: 825cf38e72c43914e92162d69a06ac43, type: 3}
-  arrowSpeed: 10
+  arrowSpeed: 20
   damage: 10
+  player: {fileID: 0}
 --- !u!50 &4840949245904154683
 Rigidbody2D:
   serializedVersion: 4

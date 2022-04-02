@@ -180,12 +180,17 @@ MonoBehaviour:
   enemyHealth: 10
   speed: 4
   lineOfSite: 14.8
+  enemyDeathCounter: 0
   deathEffect: {fileID: 1761458857357641057, guid: e619da6a266b84940816d20879507683, type: 3}
   deathEffect2: {fileID: 1761458857357641057, guid: 58931a90eeb81934cbad54c9a0cdf57f, type: 3}
   deathEffect3: {fileID: 1761458857357641057, guid: e619da6a266b84940816d20879507683, type: 3}
   deathEffect4: {fileID: 1761458857357641057, guid: 8e598fccb0f62cb498b1ede0cd433bbc, type: 3}
+  lootChance: 0
+  hp: {fileID: 2729928860713583412, guid: 8f85183f599278e4f9aed25788e30a74, type: 3}
+  coin: {fileID: 2961968517165157301, guid: 1b1940a66c1a1e7438e3d2025ab8b42f, type: 3}
   arrows: {fileID: 4840949245904154685, guid: 3f5978f6d239006499ed665ff9d9f3dc, type: 3}
   arrowParent: {fileID: 4765223032326308246}
+  arrowForce: 5
   firerate: 1
   nextShootTime: 0
   range: 8.49

@@ -22,6 +22,9 @@ public class Enemy : MonoBehaviour
 
    public Transform deathEffect, deathEffect2, deathEffect3, deathEffect4;
 
+    public float lootChance;
+    public GameObject hp;
+    public GameObject coin;
 
     private void Start()
     {
@@ -99,6 +102,9 @@ public class Enemy : MonoBehaviour
             Destroy(boom2.gameObject, 2);
             Destroy(boom3.gameObject, 3);
             Destroy(boom4.gameObject, 4);
+
+            DropLoot();
+
             Destroy(gameObject);
             
         }
@@ -118,6 +124,20 @@ public class Enemy : MonoBehaviour
             //Do contact damage to player
             PlayerControl player = collision.gameObject.GetComponent<PlayerControl>();
             player.TakeDamage(damage);
+        }
+    }
+
+    void DropLoot()
+    {
+        lootChance = UnityEngine.Random.Range(1.0f, 4.0f);
+
+        if (lootChance == 1)
+        {
+            Instantiate(hp, transform.position, transform.rotation);
+        }
+        else if (lootChance == 4)
+        {
+            Instantiate(coin, transform.position, transform.rotation);
         }
     }
 }

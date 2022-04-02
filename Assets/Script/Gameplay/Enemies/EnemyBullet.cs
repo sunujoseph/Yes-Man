@@ -11,26 +11,23 @@ public class EnemyBullet : MonoBehaviour
     public float arrowSpeed;
     public float damage = 10.0f;
 
-    
+    public GameObject player;
 
     // Start is called before the first frame update
     void Start()
     {
+            target = GameObject.FindGameObjectWithTag("Player");
+            arrowRB = GetComponent<Rigidbody2D>();
+            Vector2 moveDir = (target.transform.position - transform.position).normalized * arrowSpeed;
 
-        target = GameObject.FindGameObjectWithTag("Player");
-        arrowRB = GetComponent<Rigidbody2D>();
-        Vector2 moveDir = (target.transform.position - transform.position).normalized * arrowSpeed;
+            var dir = target.transform.position;
+            var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
-        var dir = target.transform.position;
-        var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
-        
 
-        arrowRB.velocity = new Vector2(moveDir.x, moveDir.y);
-        Destroy(gameObject,2);
-
-        
+            arrowRB.velocity = new Vector2(moveDir.x, moveDir.y);
+            Destroy(gameObject, 2);
 
     }
  
