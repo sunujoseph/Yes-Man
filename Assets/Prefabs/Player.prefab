@@ -197,7 +197,7 @@ SpriteRenderer:
   m_Size: {x: 0.32, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!50 &277800356200113315
@@ -264,6 +264,9 @@ MonoBehaviour:
   player: {fileID: 277800356200113314}
   _speed: 30
   _currentHP: 0
+  _currentMana: 100
+  _hp: {fileID: 0}
+  _mana: {fileID: 0}
   isDead: 0
   dashSpeed: 2
   dashLength: 1
