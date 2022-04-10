@@ -8,6 +8,7 @@ public class PlayerControl : MonoBehaviour
     public Rigidbody2D _rb;
     public Camera cam;
     public GameObject player;
+    public Animator animator;
 
 
     Vector2 _movement;
@@ -87,6 +88,7 @@ public class PlayerControl : MonoBehaviour
             {
                 activeMoveSpeed = dashSpeed;
                 dashCounter = dashLength;
+                animator.SetBool("isDash", true);
             }
         }
 
@@ -97,7 +99,8 @@ public class PlayerControl : MonoBehaviour
             if (dashCounter <= 0)
             {
                 activeMoveSpeed = _speed;
-                dashCoolCounter = dashCooldown; 
+                dashCoolCounter = dashCooldown;
+                animator.SetBool("isDash", false);
             }   
         }
 
