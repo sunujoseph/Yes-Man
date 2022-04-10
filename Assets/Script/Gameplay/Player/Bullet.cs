@@ -31,6 +31,12 @@ public class Bullet : MonoBehaviour
             collision.gameObject.GetComponent<BarrelBehavior>().DealDamage(_bulletDamage); ;
 
         }
+        if (collision.gameObject.tag == "Boss")
+        {
+            collision.gameObject.GetComponent<Boss>().DealDamage(_bulletDamage);
+
+            Destroy(this.gameObject);
+        }
 
         Destroy(gameObject);
     }
