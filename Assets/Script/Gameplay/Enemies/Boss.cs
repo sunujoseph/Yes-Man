@@ -85,6 +85,7 @@ public class Boss : MonoBehaviour
         CheckDeath();
 
     }
+
     
 
     private void CheckDeath()
