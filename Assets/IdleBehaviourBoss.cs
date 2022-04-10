@@ -30,7 +30,7 @@ public class IdleBehaviourBoss : StateMachineBehaviour
             timer -= Time.deltaTime;
         }
 
-        Debug.Log("Idle time: " + timer);
+        //Debug.Log("Idle time: " + timer);
 
     }
 

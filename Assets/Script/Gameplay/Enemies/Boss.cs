@@ -19,17 +19,18 @@ public class Boss : MonoBehaviour
     Vector3 direction;
     public Transform deathEffect, deathEffect2, deathEffect3, deathEffect4;
 
-    //public GameObject arrows;
-    //public GameObject arrowParent;
-    //public float arrowForce = 5f;
-    //public float firerate;
-    //public float nextShootTime;
-    //public float range;
-
     public Slider healthBar;
+    
+    
+    public float arrowForce = 5f;
+    public GameObject arrows; // Bullet game object
+
+    public GameObject arrowParent; // Shot Pos
+
+    
 
 
-    private void Start()
+    void Start()
     {
         enemyHealth = maxHealth;
         _rb = GetComponent<Rigidbody2D>();
@@ -38,12 +39,16 @@ public class Boss : MonoBehaviour
 
     }
 
-    private void Update()
+    void Update()
     {
         if (enemyHealth > 0 && player != null)
         {
             direction = player.transform.position - transform.position;
         }
+
+
+
+
 
         healthBar.value = enemyHealth;
 
@@ -86,7 +91,48 @@ public class Boss : MonoBehaviour
 
     }
 
-    
+    public void Shoot()
+    {
+        
+
+        for (int i = 0; i <= 7; i ++)
+        {
+            GameObject bullet = Instantiate(arrows, arrowParent.transform.position, arrowParent.transform.rotation);
+            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+
+            switch (i)
+            {
+                case 0:
+                    rb.AddForce(arrowParent.transform.up * arrowForce + new Vector3(0f, -90f, 0f));
+                    break;
+                case 1:
+                    rb.AddForce(arrowParent.transform.up * arrowForce + new Vector3(90f, 90f, 0f));
+                    break;
+                case 2:
+                    rb.AddForce(arrowParent.transform.up * arrowForce + new Vector3(0f, 90f, 0f));
+                    break;
+                case 3:
+                    rb.AddForce(arrowParent.transform.up * arrowForce + new Vector3(90f, 0f, 0f));
+                    break;
+                case 4:
+                    rb.AddForce(arrowParent.transform.up * arrowForce + new Vector3(-90f, 0f, 0f));
+                    break;
+                case 5:
+                    rb.AddForce(arrowParent.transform.up * arrowForce + new Vector3(-90f, 90f, 0f));
+                    break;
+                case 6:
+                    rb.AddForce(arrowParent.transform.up * arrowForce + new Vector3(90f, -90f, 0f));
+                    break;
+                case 7:
+                    rb.AddForce(arrowParent.transform.up * arrowForce + new Vector3(-90f, -90f, 0f));
+                    break;
+            }
+
+
+           // rb.AddForce(arrowParent.transform.up * arrowForce, ForceMode2D.Impulse);
+        }
+    }
+
 
     private void CheckDeath()
     {

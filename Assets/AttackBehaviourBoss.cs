@@ -34,7 +34,7 @@ public class AttackBehaviourBoss : StateMachineBehaviour
             timer -= Time.deltaTime;
         }
 
-        Debug.Log("attack time: " + timer);
+        //Debug.Log("attack time: " + timer);
 
     }
 
