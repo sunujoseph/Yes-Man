@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b740609c73781f44b6dfa74aaee9780, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 5736281822791524486, guid: a013984778b5bf84f8c3fca3518b993e, type: 3}
-  arrowSpeed: 10
+  _flashImage: {fileID: 0}
   damage: 10
+  color: {r: 1, g: 0, b: 0, a: 0}
   player: {fileID: 0}
