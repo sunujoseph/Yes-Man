@@ -5,8 +5,8 @@ using UnityEngine;
 public class BossBullet : MonoBehaviour
 {
     Rigidbody2D arrowRB;
-    public float damage = 10.0f;
 
+    public float damage = 10.0f;
     public GameObject player;
 
     // Start is called before the first frame update
@@ -23,7 +23,7 @@ public class BossBullet : MonoBehaviour
         {
             Debug.Log("hit");
             collision.gameObject.GetComponent<PlayerControl>().TakeDamage(damage);
-
+            
             Destroy(this.gameObject);
         }
     }

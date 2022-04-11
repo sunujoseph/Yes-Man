@@ -14,6 +14,8 @@ public class PlayerControl : MonoBehaviour
     Vector2 _movement;
     Vector2 mousePosition;
 
+   
+
     public float _speed;
 
     public float _currentHP = 100.0f;
@@ -36,6 +38,8 @@ public class PlayerControl : MonoBehaviour
 
     private float dashCounter;
     private float dashCoolCounter;
+
+    [SerializeField] FlashImage _flashImage;
 
     private void Awake()
     {
@@ -136,7 +140,9 @@ public class PlayerControl : MonoBehaviour
 
     public void TakeDamage(float dmg)
     {
-        _currentHP -= dmg; 
+        _currentHP -= dmg;
+
+        
     }
 
     public void HealDamage(float heal)
