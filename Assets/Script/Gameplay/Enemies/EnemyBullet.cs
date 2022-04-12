@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyBullet : MonoBehaviour
 {
 
-    
+
     Rigidbody2D arrowRB;
     public GameObject target;
     public float arrowSpeed;
@@ -40,8 +40,7 @@ public class EnemyBullet : MonoBehaviour
             Debug.Log("hit");
             collision.gameObject.GetComponent<PlayerControl>().TakeDamage(damage);
 
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
     }
-
 }

@@ -4,26 +4,19 @@ using UnityEngine;
 
 public class EnemyRange : Enemy
 {
-   
 
 
     public GameObject arrows;
     public GameObject arrowParent;
     public float arrowForce = 5f;
 
-    Rigidbody2D enemyRB;
-    Rigidbody2D _rangeRB;
-
+    public float arrowSpeed;
     public float firerate;
     public float nextShootTime;
 
     public float range;
 
-    private void Awake()
-    {
-        enemyRB= GetComponent<Rigidbody2D>();
-    }
-    
+ 
 
 
     private void FixedUpdate()
