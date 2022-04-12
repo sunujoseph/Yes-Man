@@ -16,7 +16,7 @@ public class Enemy : MonoBehaviour
     public float speed;
     public float lineOfSite;
 
-     Vector3 direction;
+     public Vector3 direction;
     //number of enemies that have been killed
     public int enemyDeathCounter;
 
