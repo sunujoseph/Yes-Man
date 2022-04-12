@@ -103,27 +103,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pickups-exportcoin 1-export_0
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 372
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c231698f40d691020800000000000000
-      internalID: 2312999751749341996
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Pickups-exportcoin 1-export_1
       rect:
         serializedVersion: 2
@@ -132,7 +111,7 @@ TextureImporter:
         width: 60
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -153,7 +132,7 @@ TextureImporter:
         width: 60
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -161,27 +140,6 @@ TextureImporter:
       bones: []
       spriteID: 7920fb69b0d036580800000000000000
       internalID: -8835203700545879401
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pickups-exportcoin 1-export_3
-      rect:
-        serializedVersion: 2
-        x: 6
-        y: 360
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f0b569e202f371460800000000000000
-      internalID: 7212302735710247695
       vertices: []
       indices: 
       edges: []
