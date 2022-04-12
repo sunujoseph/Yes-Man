@@ -7,6 +7,7 @@ public abstract class Pickup : MonoBehaviour
     //Pickup delay time
     public float _waitToPickup = .5f;
 
+
     // Update is called once per frame
     void Update()
     {

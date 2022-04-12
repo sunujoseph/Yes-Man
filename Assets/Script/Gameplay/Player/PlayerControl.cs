@@ -15,7 +15,6 @@ public class PlayerControl : MonoBehaviour
     Vector2 mousePosition;
 
    
-
     public float _speed;
 
     public float _currentHP = 100.0f;
@@ -24,8 +23,10 @@ public class PlayerControl : MonoBehaviour
     public float _currentMana = 100.0f;
     private float _maxMana = 100.0f;
 
-    public GameObject _hp;
-    public GameObject _mana;
+    public int currentGold;
+
+    public GameObject _hpFill;
+    public GameObject _manaFill;
 
     public bool isDead = false;
 
@@ -38,6 +39,7 @@ public class PlayerControl : MonoBehaviour
 
     private float dashCounter;
     private float dashCoolCounter;
+
 
     [SerializeField] FlashImage _flashImage;
 
@@ -148,7 +150,7 @@ public class PlayerControl : MonoBehaviour
     public void HealDamage(float heal)
     {
         _currentHP += heal;
-            if (_currentHP >= _maxHP)
+        if (_currentHP >= _maxHP)
         {
             _currentHP = _maxHP;
         }
@@ -171,14 +173,24 @@ public class PlayerControl : MonoBehaviour
     void DisplayHealth()
     {       
         UIControl.instance._playerHPText.text = _currentHP.ToString();
-        _hp.GetComponent<RectTransform>().sizeDelta = new Vector2(170.0f * (_currentHP / 100.0f), 25);
+        _hpFill.GetComponent<RectTransform>().sizeDelta = new Vector2(170.0f * (_currentHP / 100.0f), 25);
         
 
     }
     void DisplayMana()
     {
         UIControl.instance._playerManaText.text = _currentMana.ToString();
-        _mana.GetComponent<RectTransform>().sizeDelta = new Vector2(170.0f * (_currentMana / 100.0f), 25);
+        _manaFill.GetComponent<RectTransform>().sizeDelta = new Vector2(170.0f * (_currentMana / 100.0f), 25);
 
+    }
+
+    void DisplayGold()
+    {
+        UIControl.instance._currentGoldText.text = currentGold.ToString();
+    }
+
+    public void AddGold(int goldValue)
+    {
+        currentGold += goldValue;
     }
 }
