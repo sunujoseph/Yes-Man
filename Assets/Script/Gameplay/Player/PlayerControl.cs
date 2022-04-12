@@ -19,6 +19,7 @@ public class PlayerControl : MonoBehaviour
 
     public float _currentHP = 100.0f;
     private float _maxHP = 100.0f;
+    float starting_maxHP;
 
     public float _currentMana = 100.0f;
     private float _maxMana = 100.0f;
@@ -36,10 +37,12 @@ public class PlayerControl : MonoBehaviour
 
     public float dashLength = 0.5f;
     public float dashCooldown = 1f;
+    float startingDashCooldown;
 
     private float dashCounter;
     private float dashCoolCounter;
 
+    Powerup currentSelectedPowerup;
 
     [SerializeField] FlashImage _flashImage;
 
@@ -58,6 +61,9 @@ public class PlayerControl : MonoBehaviour
     void Start()
     {
         activeMoveSpeed = _speed;
+
+        startingDashCooldown = dashCooldown;
+
         StartHP();
         StartMana();
     }
@@ -72,7 +78,9 @@ public class PlayerControl : MonoBehaviour
         mousePosition = cam.ScreenToWorldPoint(Input.mousePosition);
         DisplayHealth();
         DisplayMana();
+        DisplayGold();
 
+        ActivatePowerup();
         Die();
         
     }
@@ -163,8 +171,8 @@ public class PlayerControl : MonoBehaviour
 
             _currentHP = 0.0f;
             isDead = true;
-
-            Destroy(gameObject);
+            player.SetActive(false);
+            //Destroy(gameObject);
 
 
         }
@@ -192,5 +200,34 @@ public class PlayerControl : MonoBehaviour
     public void AddGold(int goldValue)
     {
         currentGold += goldValue;
+    } 
+
+
+    //Powerups
+
+    void ActivatePowerup()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            currentSelectedPowerup.UsePowerup();
+        }
     }
+    public void DecreaseDashCooldown(float cooldownMultiplier)
+    {
+        dashCooldown = startingDashCooldown * cooldownMultiplier;
+    }
+    public void RevertDashCooldown()
+    {
+        dashCooldown = startingDashCooldown;
+    }
+
+    public void IncreaseMaxHP(float maxHP_Multiplier)
+    {
+        _maxHP = starting_maxHP * maxHP_Multiplier;
+    }
+    public void RevertMaxHP()
+    {
+        _maxHP = starting_maxHP;
+    }
+
 }

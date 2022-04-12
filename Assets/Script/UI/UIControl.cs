@@ -12,6 +12,9 @@ public class UIControl : MonoBehaviour
 
     public Text _currentGoldText;
 
+    public Text _roundTimer;
+    public Text _currentRound;
+
     void Awake()
     {
         instance = this;

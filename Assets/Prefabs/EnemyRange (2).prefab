@@ -148,16 +148,18 @@ MonoBehaviour:
   player: {fileID: 277800356200113318, guid: 825cf38e72c43914e92162d69a06ac43, type: 3}
   damage: 2
   enemyHealth: 10
+  maxHealth: 15
   speed: 4
   lineOfSite: 14.8
+  direction: {x: 0, y: 0, z: 0}
   enemyDeathCounter: 0
   deathEffect: {fileID: 1761458857357641057, guid: e619da6a266b84940816d20879507683, type: 3}
   deathEffect2: {fileID: 1761458857357641057, guid: 58931a90eeb81934cbad54c9a0cdf57f, type: 3}
   deathEffect3: {fileID: 1761458857357641057, guid: e619da6a266b84940816d20879507683, type: 3}
-  deathEffect4: {fileID: 1761458857357641057, guid: 8e598fccb0f62cb498b1ede0cd433bbc, type: 3}
-  lootChance: 0
-  hp: {fileID: 2729928860713583412, guid: 8f85183f599278e4f9aed25788e30a74, type: 3}
-  coin: {fileID: 2961968517165157301, guid: 1b1940a66c1a1e7438e3d2025ab8b42f, type: 3}
+  itemDropPercent: 75
+  itemsToDrop:
+  - {fileID: 316530380625023437, guid: 5f2570b4c69fe92499eec2679e40fba9, type: 3}
+  - {fileID: 2961968517165157301, guid: 1b1940a66c1a1e7438e3d2025ab8b42f, type: 3}
   arrows: {fileID: 4840949245904154685, guid: ac53bbea1cfc38b4d97a8b8dd916de14, type: 3}
   arrowParent: {fileID: 5839909373446435150}
   arrowForce: 5

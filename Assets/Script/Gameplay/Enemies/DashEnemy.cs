@@ -13,8 +13,7 @@ public class DashEnemy : Enemy
 
     public float dashSpeed = 1; 
 
-
-    Vector2 direction;
+    
     public Transform target; 
 
     private void Start()
