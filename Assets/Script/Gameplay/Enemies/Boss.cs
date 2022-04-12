@@ -47,9 +47,6 @@ public class Boss : MonoBehaviour
         }
 
 
-
-
-
         healthBar.value = enemyHealth;
 
     }
@@ -80,7 +77,7 @@ public class Boss : MonoBehaviour
 
     }
 
-    
+
 
     public void DealDamage(float damage)
     {
@@ -147,10 +144,7 @@ public class Boss : MonoBehaviour
             Destroy(boom3.gameObject, 3);
             Destroy(boom4.gameObject, 4);
 
-            
-
             Destroy(gameObject);
-
         }
     }
 
