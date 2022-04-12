@@ -19,7 +19,7 @@ public class Enemy : MonoBehaviour
 
     
 
-    Vector3 direction;
+    public Vector3 direction;
     //number of enemies that have been killed
     public int enemyDeathCounter;
 
