@@ -466,8 +466,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   guideBox: {fileID: 1963927078}
   guideText: {fileID: 1092970334}
-  guide: Good Job. Once you step out of the portal, you will begin the journey to
-    become the arena champion. Good luck!
+  guide: 'Nice to Finally meet ya face to face, the names Bargain Ben. I''m but a
+    humble shopkeep, giving my tutorials to those unlucky enough to find themselves
+    in your shoes. But the exlucivity of my service means it doesn''t come cheap,
+    but Im willing to comprimise for something that helps us both...
+
+
+    This portal
+    brings you to the waiting room, When your out there fightin, I need you to bring
+    me back any money that is on the field, if you bring back enough I might even
+    give you a little bonus, for workin overtime.
+
+
+    Alright enough stallin, get
+    out there and go make me some money'
   inRange: 0
 --- !u!61 &282654189
 BoxCollider2D:
@@ -681,6 +693,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3031023383296717174, guid: 4ffc8a707e1f2414e86bcb88f8ac3340, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8aac282d883e25a4ba79dcaa25788019, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ffc8a707e1f2414e86bcb88f8ac3340, type: 3}
 --- !u!1 &364980889
@@ -1137,10 +1153,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   guideBox: {fileID: 1963927078}
   guideText: {fileID: 1092970334}
-  guide: "Welcome Challenger . \nWelcome to Grudge Match. \nYou are chosen to be
-    the warrior of this arena. If you want your freedom, then there is a few thing
-    you will need to learn.\nLet's Start with something simple. Once You are done,
-    follow the path:\n\n(WASD to move)\n(Mouse Control to Look Around)"
+  guide: "Well hello there new customer.\nWelcome to Grudge Match. \nYou have been
+    captured by the empire, they are gonna use you for sport in the fighting pits.
+    But I got a huch that you've got the makings to get out of here alive. keep walkin
+    and I'll show you how to fight, for a sizable fee of course. \n\n(WASD to move)\n(Mouse
+    Control to Look Around)"
   inRange: 0
 --- !u!61 &607573810
 BoxCollider2D:
@@ -1557,6 +1574,10 @@ PrefabInstance:
       propertyPath: m_BodyType
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 844968276696708139, guid: a97feb9b47442ca41be5223c3d78f2fe, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ab8130f07ed6a9e4e86a4e25b3bae3fb, type: 3}
     - target: {fileID: 844968276696708140, guid: a97feb9b47442ca41be5223c3d78f2fe, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -1836,9 +1857,21 @@ PrefabInstance:
       propertyPath: m_BodyType
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4765223032423774418, guid: f6895ace4dce221458e8fa42ffc60224, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b5875d5bbbc7fdd4d8adbb9382b09051, type: 3}
     - target: {fileID: 4765223032423774419, guid: f6895ace4dce221458e8fa42ffc60224, type: 3}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765223032423774419, guid: f6895ace4dce221458e8fa42ffc60224, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765223032423774419, guid: f6895ace4dce221458e8fa42ffc60224, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4765223032423774419, guid: f6895ace4dce221458e8fa42ffc60224, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2131,6 +2164,10 @@ PrefabInstance:
       propertyPath: m_BodyType
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4765223032423774418, guid: f6895ace4dce221458e8fa42ffc60224, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b5875d5bbbc7fdd4d8adbb9382b09051, type: 3}
     - target: {fileID: 4765223032423774419, guid: f6895ace4dce221458e8fa42ffc60224, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -3634,9 +3671,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   guideBox: {fileID: 1963927078}
   guideText: {fileID: 1092970334}
-  guide: "You are a mage, what does a mage do? \nShoot Magic \n\n(Left Mouse Click
-    to Fire)\n\nThere is a few enemy in this room, so why don;t you test out your
-    shooting skill. \n"
+  guide: "Say pal your lookin a little pale, even for a skeleton. Why don't you go
+    blow off some steam on those definutly not failed clone warriors. They cant walk
+    or attack because they uh, love you or something. \n\n(Left Mouse Click to Fire)"
   inRange: 0
 --- !u!61 &1335218208
 BoxCollider2D:
@@ -3762,9 +3799,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   guideBox: {fileID: 1963927078}
   guideText: {fileID: 1092970334}
-  guide: 'Here is an another challenge. Finish this to go to the next level
-
-'
+  guide: "Not Bad,  most monsters get stuck on the dash section and write a angry
+    review about it. \nHere is an another challenge. and all out brawl against the
+    3 types of fighters. Be warned though, you are the first monster they have had
+    in a while mighty warriors accross the land are coming to kill you. So no pressure,
+    just reach the end and Ill be waiting for ya there. "
   inRange: 0
 --- !u!61 &1360336469
 BoxCollider2D:
@@ -3905,7 +3944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -3926,7 +3965,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 400909388}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -3949,6 +3988,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1963927079}
+  - {fileID: 1581223763}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4066,6 +4106,115 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1483038695
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1483038698}
+  - component: {fileID: 1483038697}
+  - component: {fileID: 1483038696}
+  m_Layer: 0
+  m_Name: BargainBen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1483038696
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483038695}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.84, y: 3.84}
+    newSize: {x: 3.84, y: 3.84}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.84, y: 3.84}
+  m_EdgeRadius: 0
+--- !u!212 &1483038697
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483038695}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 03f9242343b363743a5c00ab5e22f580, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 3.84, y: 3.84}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1483038698
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483038695}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 75.81, y: -35.01, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1510665253 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3031023383296717169, guid: 4ffc8a707e1f2414e86bcb88f8ac3340, type: 3}
@@ -4180,6 +4329,81 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1581223762
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1581223763}
+  - component: {fileID: 1581223765}
+  - component: {fileID: 1581223764}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1581223763
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581223762}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1361179092}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1109, y: 519}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1581223764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581223762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.01886791, g: 0.01886791, b: 0.01886791, a: 0.3137255}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1581223765
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581223762}
+  m_CullTransparentMesh: 1
 --- !u!1 &1593815661
 GameObject:
   m_ObjectHideFlags: 0
@@ -4628,6 +4852,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 543762990}
     m_Modifications:
+    - target: {fileID: 4765223032423774418, guid: f6895ace4dce221458e8fa42ffc60224, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b5875d5bbbc7fdd4d8adbb9382b09051, type: 3}
     - target: {fileID: 4765223032423774419, guid: f6895ace4dce221458e8fa42ffc60224, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -4689,6 +4917,10 @@ PrefabInstance:
       propertyPath: m_BodyType
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4765223032423774418, guid: f6895ace4dce221458e8fa42ffc60224, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b5875d5bbbc7fdd4d8adbb9382b09051, type: 3}
     - target: {fileID: 4765223032423774419, guid: f6895ace4dce221458e8fa42ffc60224, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -5256,6 +5488,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3031023383296717174, guid: 4ffc8a707e1f2414e86bcb88f8ac3340, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8aac282d883e25a4ba79dcaa25788019, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ffc8a707e1f2414e86bcb88f8ac3340, type: 3}
 --- !u!1 &1957891616
@@ -5402,7 +5638,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 173.88554, y: 7.033}
+  m_AnchoredPosition: {x: 173.88556, y: 7.033}
   m_SizeDelta: {x: 334.9783, y: 377.67}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1963927080
@@ -5721,9 +5957,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   guideBox: {fileID: 1963927078}
   guideText: {fileID: 1092970334}
-  guide: "These is the 3 type of enemy you will be facing :\n\nThe Archer (range)
-    : Shoot arrow from range\n\nThe Brute (melee) : Follow you and attack \n\nThe
-    Dwarf (charger): Charge at you.\n\nTry Shooting at them "
+  guide: 'These is the 3 type of enemy you will be facing :
+
+
+    The Archer Shoots
+    arrows at you from far away.
+
+
+    The Brute will Follow you and attack close
+    ranged.
+
+
+    The Dwarf  will charge at you once getting close enough.
+
+
+'
   inRange: 0
 --- !u!61 &2020880030
 BoxCollider2D:
@@ -5936,6 +6184,10 @@ PrefabInstance:
       propertyPath: m_BodyType
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4765223032423774418, guid: f6895ace4dce221458e8fa42ffc60224, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b5875d5bbbc7fdd4d8adbb9382b09051, type: 3}
     - target: {fileID: 4765223032423774419, guid: f6895ace4dce221458e8fa42ffc60224, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -6046,7 +6298,9 @@ MonoBehaviour:
   guide: '(Space for Dashing)
 
 
-    Try to move to the next level '
+    These Subje-, Warriors are a little less in love
+    with you and will attack you if you are close enough, dash through their shots
+    and reach the end.'
   inRange: 0
 --- !u!61 &2104564397
 BoxCollider2D:
@@ -6206,6 +6460,10 @@ PrefabInstance:
       propertyPath: lineOfSite
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3031023383296717174, guid: 4ffc8a707e1f2414e86bcb88f8ac3340, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8aac282d883e25a4ba79dcaa25788019, type: 3}
     - target: {fileID: 3031023383296717175, guid: 4ffc8a707e1f2414e86bcb88f8ac3340, type: 3}
       propertyPath: m_BodyType
       value: 1
@@ -6235,9 +6493,21 @@ PrefabInstance:
       propertyPath: deathEffect4
       value: 
       objectReference: {fileID: 1761458857357641057, guid: e619da6a266b84940816d20879507683, type: 3}
+    - target: {fileID: 844968276696708139, guid: a97feb9b47442ca41be5223c3d78f2fe, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ab8130f07ed6a9e4e86a4e25b3bae3fb, type: 3}
     - target: {fileID: 844968276696708140, guid: a97feb9b47442ca41be5223c3d78f2fe, type: 3}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 844968276696708140, guid: a97feb9b47442ca41be5223c3d78f2fe, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 844968276696708140, guid: a97feb9b47442ca41be5223c3d78f2fe, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 844968276696708140, guid: a97feb9b47442ca41be5223c3d78f2fe, type: 3}
       propertyPath: m_LocalPosition.x
