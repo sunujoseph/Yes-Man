@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class CoinPickup : Pickup
 {
-    public int _goldValue;
+    public int goldValue = 1;
     public override void PickupItem()
     {
-        //GameObject.FindWithTag("Player").GetComponent<PlayerControl>().AddGold(_goldValue);
-        //Destroy(this.gameObject);
+        GameObject.FindWithTag("Player").GetComponent<PlayerControl>().AddGold(goldValue);
+        Destroy(this.gameObject);
     }
     
 

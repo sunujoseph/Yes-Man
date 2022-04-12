@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Enemy : MonoBehaviour
 {
@@ -16,7 +17,9 @@ public class Enemy : MonoBehaviour
     public float speed;
     public float lineOfSite;
 
-     public Vector3 direction;
+    
+
+    Vector3 direction;
     //number of enemies that have been killed
     public int enemyDeathCounter;
 
@@ -25,6 +28,10 @@ public class Enemy : MonoBehaviour
     public float lootChance;
     public GameObject hp;
     public GameObject coin;
+
+    public float itemDropPercent = 75.0f;
+
+    public List<GameObject> itemsToDrop = new List<GameObject>();
 
     private void Start()
     {
@@ -127,17 +134,17 @@ public class Enemy : MonoBehaviour
         }
     }
 
+
     void DropLoot()
     {
-        lootChance = UnityEngine.Random.Range(1.0f, 4.0f);
+        float dropChance = Random.Range(0f, 100f);
+        
 
-        if (lootChance == 1)
+        if (dropChance < itemDropPercent)
         {
-            Instantiate(hp, transform.position, transform.rotation);
-        }
-        else if (lootChance == 4)
-        {
-            Instantiate(coin, transform.position, transform.rotation);
+            int randomItem = Random.Range(0, itemsToDrop.Count);
+
+            Instantiate(itemsToDrop[randomItem], transform.position, transform.rotation);
         }
     }
 }
