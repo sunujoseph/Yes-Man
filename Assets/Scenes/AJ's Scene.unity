@@ -188,6 +188,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss
       objectReference: {fileID: 0}
+    - target: {fileID: 2930415902020534306, guid: a71622297660445418309f87b94bcecf, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c3a93812c4cada34c88b7acd5df07d5f, type: 3}
     - target: {fileID: 2930415902020534309, guid: a71622297660445418309f87b94bcecf, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -212,6 +216,10 @@ PrefabInstance:
     - target: {fileID: 198555275, guid: 31324b2fb85c80c4399bfd4757ef34ee, type: 3}
       propertyPath: m_Name
       value: Skull
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553081005123648514, guid: 31324b2fb85c80c4399bfd4757ef34ee, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5803279881610581841, guid: 31324b2fb85c80c4399bfd4757ef34ee, type: 3}
       propertyPath: m_Name
