@@ -11,27 +11,22 @@ public class Enemy : MonoBehaviour
 
     public float damage = 2.0f;
 
-    public float enemyHealth = 10.0f;
-    float maxHealth = 10.0f;
+    public float enemyHealth;
+    [SerializeField] float maxHealth = 10.0f;
 
     public float speed;
     public float lineOfSite;
 
-    
-
-    public Vector3 direction;
+    [HideInInspector] public Vector3 direction;
     //number of enemies that have been killed
     public int enemyDeathCounter;
 
-   public Transform deathEffect, deathEffect2, deathEffect3, deathEffect4;
+    public Transform deathEffect, deathEffect2, deathEffect3;
 
-    public float lootChance;
-    public GameObject hp;
-    public GameObject coin;
 
     public float itemDropPercent = 75.0f;
-
     public List<GameObject> itemsToDrop = new List<GameObject>();
+
 
     private void Start()
     {
@@ -104,14 +99,13 @@ public class Enemy : MonoBehaviour
             var boom = Instantiate(deathEffect, transform.position, transform.rotation);
             var boom2 = Instantiate(deathEffect2, transform.position, transform.rotation);
             var boom3 = Instantiate(deathEffect3, transform.position, transform.rotation);
-            var boom4 = Instantiate(deathEffect4, transform.position, transform.rotation);
+            
             Destroy(boom.gameObject, 1);
             Destroy(boom2.gameObject, 2);
             Destroy(boom3.gameObject, 3);
-            Destroy(boom4.gameObject, 4);
 
             DropLoot();
-
+            
             Destroy(gameObject);
             
         }
@@ -137,14 +131,17 @@ public class Enemy : MonoBehaviour
 
     void DropLoot()
     {
-        float dropChance = Random.Range(0f, 100f);
+        float dropChance = Random.Range(0.0f, 100.0f);
         
 
-        if (dropChance < itemDropPercent)
+        if (dropChance <= itemDropPercent)
         {
-            int randomItem = Random.Range(0, itemsToDrop.Count);
+            float randomItem = Random.Range(0, itemsToDrop.Count);
+            int itemKey = Mathf.RoundToInt(randomItem);
 
-            Instantiate(itemsToDrop[randomItem], transform.position, transform.rotation);
+            Instantiate(itemsToDrop[itemKey], transform.position, Quaternion.Euler(0f, 0f, 0f));
+
         }
+
     }
 }

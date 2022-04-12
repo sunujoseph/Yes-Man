@@ -1,16 +1,13 @@
 fileFormatVersion: 2
-guid: ee14892b479c41645bea75ede4549203
+guid: 59ed411ac1985a0429e7e79c201b9609
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2953603807795177419
-    second: Pickups-exportcoin 1_0
+      213: 1250648081249788372
+    second: Pickups-export_0
   - first:
-      213: -6368317979330292062
-    second: Pickups-exportcoin 1_1
-  - first:
-      213: 2079625707125804277
-    second: Pickups-exportcoin 1_2
+      213: 2938658541179505555
+    second: Pickups-export_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -100,34 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pickups-exportcoin 1_0
+      name: Pickups-export_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 49
-        width: 19
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 1, y: 0, z: 3, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc76fdaa30f4df820800000000000000
-      internalID: 2953603807795177419
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pickups-exportcoin 1_1
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 46
-        width: 12
-        height: 17
+        x: 6
+        y: 294
+        width: 84
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -135,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a6d841e9803f97a0800000000000000
-      internalID: -6368317979330292062
+      spriteID: 4d1eaedbdc13b5110800000000000000
+      internalID: 1250648081249788372
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pickups-exportcoin 1_2
+      name: Pickups-export_1
       rect:
         serializedVersion: 2
-        x: 42
-        y: 46
-        width: 11
-        height: 17
+        x: 102
+        y: 294
+        width: 84
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fc0103ff805cdc10800000000000000
-      internalID: 2079625707125804277
+      spriteID: 39b0c2f9f5638c820800000000000000
+      internalID: 2938658541179505555
       vertices: []
       indices: 
       edges: []

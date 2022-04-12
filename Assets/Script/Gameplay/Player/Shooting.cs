@@ -9,7 +9,7 @@ public class Shooting : MonoBehaviour
 
     public float bulletForce = 20f;
 
-    public float damage;
+    //public float damage;
 
     // Update is called once per frame
     void Update()
@@ -25,7 +25,7 @@ public class Shooting : MonoBehaviour
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             rb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);
 
-            bullet.GetComponent<Bullet>()._bulletDamage = damage;
+            //bullet.GetComponent<Bullet>()._bulletDamage = damage;
 
         }
     }

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &844968276696708183
+--- !u!1 &317040239194935081
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,39 +8,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 844968276696708140}
-  - component: {fileID: 844968276696708139}
-  - component: {fileID: 844968276696708138}
-  - component: {fileID: 844968276696708137}
-  - component: {fileID: 844968276696708136}
-  m_Layer: 9
-  m_Name: Dwarf
-  m_TagString: Enemy
+  - component: {fileID: 6786621492910656747}
+  - component: {fileID: -3368314475224539450}
+  - component: {fileID: -8788237585399547150}
+  - component: {fileID: -6131068710181691635}
+  - component: {fileID: -5035608408911649340}
+  m_Layer: 0
+  m_Name: EnemyCharge
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &844968276696708140
+--- !u!4 &6786621492910656747
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844968276696708183}
+  m_GameObject: {fileID: 317040239194935081}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.283577, y: -30.471632, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &844968276696708139
+--- !u!212 &-3368314475224539450
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844968276696708183}
+  m_GameObject: {fileID: 317040239194935081}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -74,93 +74,93 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d1921016c721a1941ba50497ec58476b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8eb4e87aeb3bae247966d138936ed050, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.84, y: 3.84}
+  m_Size: {x: 0.64, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &844968276696708138
-BoxCollider2D:
+--- !u!114 &-8788237585399547150
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844968276696708183}
+  m_GameObject: {fileID: 317040239194935081}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.037755966, y: -0.01258564}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.84, y: 3.84}
-    newSize: {x: 3.84, y: 3.84}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.4556007, y: 0.94534874}
-  m_EdgeRadius: 0
---- !u!50 &844968276696708137
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbbf9809f5ec3d043b2c22452030c5f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 5736281822512241783, guid: a013984778b5bf84f8c3fca3518b993e, type: 3}
+  damage: 2
+  enemyHealth: 10
+  maxHealth: 10
+  speed: 3
+  lineOfSite: 10
+  direction: {x: 0, y: 0, z: 0}
+  enemyDeathCounter: 0
+  deathEffect: {fileID: 1761458857357641057, guid: e619da6a266b84940816d20879507683, type: 3}
+  deathEffect2: {fileID: 1761458857357641057, guid: 8e598fccb0f62cb498b1ede0cd433bbc, type: 3}
+  deathEffect3: {fileID: 1761458857357641057, guid: 58931a90eeb81934cbad54c9a0cdf57f, type: 3}
+  itemDropPercent: 75
+  itemsToDrop:
+  - {fileID: 316530380625023437, guid: 5f2570b4c69fe92499eec2679e40fba9, type: 3}
+  - {fileID: 2961968517165157301, guid: 1b1940a66c1a1e7438e3d2025ab8b42f, type: 3}
+  dashRange: 4
+  dashRate: 5
+  nextDashCounter: 0
+  dashSpeed: 3
+  target: {fileID: 5736281822512241783, guid: a013984778b5bf84f8c3fca3518b993e, type: 3}
+--- !u!50 &-6131068710181691635
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844968276696708183}
-  m_BodyType: 1
+  m_GameObject: {fileID: 317040239194935081}
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &844968276696708136
-MonoBehaviour:
+--- !u!61 &-5035608408911649340
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844968276696708183}
+  m_GameObject: {fileID: 317040239194935081}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbbf9809f5ec3d043b2c22452030c5f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  damage: 2
-  enemyHealth: 10
-  speed: 0
-  lineOfSite: 0
-  direction: {x: 0, y: 0, z: 0}
-  enemyDeathCounter: 0
-  deathEffect: {fileID: 0}
-  deathEffect2: {fileID: 0}
-  deathEffect3: {fileID: 0}
-  deathEffect4: {fileID: 0}
-  lootChance: 0
-  hp: {fileID: 0}
-  coin: {fileID: 0}
-  _dasherRB: {fileID: 0}
-  dashRange: 0
-  dashRate: 0
-  startDashTimer: 0
-  dashSpeed: 1
-  target: {fileID: 0}
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 0.64, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.64, y: 0.64}
+  m_EdgeRadius: 0

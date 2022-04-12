@@ -8,8 +8,14 @@ public class Bullet : MonoBehaviour
 {
     public GameObject hitEffect;
 
-    public float _bulletDamage;
 
+    public float _bulletDamage;
+    float startingDamage;
+
+    private void Awake()
+    {
+        startingDamage = _bulletDamage;
+    }
     // Bullet script when the bullet hits an object
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -48,4 +54,13 @@ public class Bullet : MonoBehaviour
     }
 
 
+    //Powerup
+    public void IncreaseAttackDamage(float attackMultiplier)
+    {
+        _bulletDamage = startingDamage * attackMultiplier;
+    }
+    public void RevertAttackDamage()
+    {
+        _bulletDamage = startingDamage;
+    }
 }

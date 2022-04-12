@@ -43,7 +43,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2296847063062021057}
   m_Layer: 0
-  m_Name: Coin Stuff
+  m_Name: GoldCoin Stuff
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -446,6 +446,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerHPText: {fileID: 5803279881061313748}
   _playerManaText: {fileID: 5803279882896976119}
+  _currentGoldText: {fileID: 5803279882380896724}
+  _roundTimer: {fileID: 0}
+  _currentRound: {fileID: 0}
 --- !u!1 &5803279881615497517
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,8 +514,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2953603807795177419, guid: ee14892b479c41645bea75ede4549203, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 1250648081249788372, guid: 59ed411ac1985a0429e7e79c201b9609, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -833,7 +836,7 @@ GameObject:
   - component: {fileID: 5803279882380896727}
   - component: {fileID: 5803279882380896724}
   m_Layer: 5
-  m_Name: Current Coins
+  m_Name: Current Gold
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
