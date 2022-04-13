@@ -14,8 +14,8 @@ public class Boss : MonoBehaviour
 
     public float damage = 2.0f;
 
-    public float enemyHealth = 100.0f;
-    float maxHealth = 100.0f;
+    public float enemyHealth = 1000.0f;
+    float maxHealth = 1000.0f;
 
     public float speed;
     public float lineOfSite;

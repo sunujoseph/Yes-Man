@@ -4277,6 +4277,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 367165246}
     - target: {fileID: 5736281822791524507, guid: a013984778b5bf84f8c3fca3518b993e, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1954490562}
+    - target: {fileID: 5736281822791524507, guid: a013984778b5bf84f8c3fca3518b993e, type: 3}
       propertyPath: _manaFill
       value: 
       objectReference: {fileID: 18542479}

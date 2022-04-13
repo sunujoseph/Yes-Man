@@ -339,7 +339,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 100
+  m_MaxValue: 1000
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -1950,8 +1950,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2930415902020534335, guid: a71622297660445418309f87b94bcecf, type: 3}
       propertyPath: enemyHealth
-      value: 100
+      value: 1000
       objectReference: {fileID: 0}
+    - target: {fileID: 2930415902020534335, guid: a71622297660445418309f87b94bcecf, type: 3}
+      propertyPath: deathEffect2
+      value: 
+      objectReference: {fileID: 1761458857357641057, guid: 58931a90eeb81934cbad54c9a0cdf57f, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a71622297660445418309f87b94bcecf, type: 3}
 --- !u!1001 &3441181841252621240

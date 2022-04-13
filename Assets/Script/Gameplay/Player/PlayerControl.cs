@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerControl : MonoBehaviour
 {
@@ -183,6 +184,9 @@ public class PlayerControl : MonoBehaviour
             _currentHP = 0.0f;
             isDead = true;
             player.SetActive(false);
+
+            SceneManager.LoadScene(4);
+            
             //Destroy(gameObject);
 
 
