@@ -330,10 +330,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4553081005123648514, guid: 31324b2fb85c80c4399bfd4757ef34ee, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5803279881610581841, guid: 31324b2fb85c80c4399bfd4757ef34ee, type: 3}
       propertyPath: m_Name
       value: UI Canvas
@@ -435,6 +431,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MouseOBJ
       objectReference: {fileID: 0}
+    - target: {fileID: 3441181843191228075, guid: b14bd8a6f8bfd47429aac436b10f62e7, type: 3}
+      propertyPath: cursorTexture
+      value: 
+      objectReference: {fileID: 2800000, guid: 1e18165a8f8d57049859bcba98af2dac, type: 3}
     - target: {fileID: 3441181843191228076, guid: b14bd8a6f8bfd47429aac436b10f62e7, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -638,6 +638,10 @@ PrefabInstance:
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5553968390142309585, guid: 025856c5090849341a3c6c517a96b95d, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: ac59a0cb635c65a40ae715ee2c5ab8d8, type: 2}
     - target: {fileID: 5553968390363654366, guid: 025856c5090849341a3c6c517a96b95d, type: 3}
       propertyPath: Loop
       value: 1
@@ -646,6 +650,10 @@ PrefabInstance:
       propertyPath: m_PlayOnAwake
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5553968390363654366, guid: 025856c5090849341a3c6c517a96b95d, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: ac59a0cb635c65a40ae715ee2c5ab8d8, type: 2}
     - target: {fileID: 5553968390363654369, guid: 025856c5090849341a3c6c517a96b95d, type: 3}
       propertyPath: m_Layer
       value: 5
