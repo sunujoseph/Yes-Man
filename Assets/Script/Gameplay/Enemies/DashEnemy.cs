@@ -14,7 +14,7 @@ public class DashEnemy : Enemy
     public float dashSpeed = 1; 
 
     
-    public Transform target; 
+    //public Transform target; 
 
     private void Start()
     {

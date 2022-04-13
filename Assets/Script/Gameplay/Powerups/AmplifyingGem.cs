@@ -7,6 +7,7 @@ public class AmplifyingGem : Pickup
     //Increase Attack Damage
     public float attackMultiplier = 2;
 
+    
 
     public Transform _flashPoint;
 
@@ -40,4 +41,16 @@ public class AmplifyingGem : Pickup
         isActive = false;
 
     }
+
+   /*void Update()
+    {
+        if (isActive == true)
+        {
+            activeItem.SetActive(true);
+        }
+        else if (isActive == false)
+        {
+            activeItem.SetActive(false);
+        }
+    }*/
 }

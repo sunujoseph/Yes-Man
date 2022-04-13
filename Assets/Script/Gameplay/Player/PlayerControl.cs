@@ -11,7 +11,6 @@ public class PlayerControl : MonoBehaviour
     public GameObject player;
     public Animator animator;
 
-
     Vector2 _movement;
     Vector2 mousePosition;
 

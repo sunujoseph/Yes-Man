@@ -175,7 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75914c7373bff3644b6167105bcc6930, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 277800356200113318, guid: 825cf38e72c43914e92162d69a06ac43, type: 3}
+  player: {fileID: 5736281822512241783, guid: a013984778b5bf84f8c3fca3518b993e, type: 3}
   damage: 2
   enemyHealth: 10
   maxHealth: 10
@@ -193,6 +193,7 @@ MonoBehaviour:
   arrows: {fileID: 4840949245904154685, guid: 3f5978f6d239006499ed665ff9d9f3dc, type: 3}
   arrowParent: {fileID: 4765223032326308246}
   arrowForce: 5
+  arrowSpeed: 0
   firerate: 1
   nextShootTime: 0
   range: 8.49

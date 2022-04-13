@@ -24,7 +24,7 @@ public class AudioManager : MonoBehaviour
         gameOverMusic.Play();
     }
 
-    public void PlayLevelWin()
+    public void PlayRoundWin()
     {
         levelMusic.Stop();
 

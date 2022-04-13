@@ -127,6 +127,7 @@ GameObject:
   - component: {fileID: 5736281822791524507}
   - component: {fileID: 5736281822791524484}
   - component: {fileID: 5736281822791524485}
+  - component: {fileID: 1954490562}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -236,7 +237,7 @@ MonoBehaviour:
   _rb: {fileID: 5736281822791524506}
   cam: {fileID: 0}
   player: {fileID: 5736281822791524486}
-  animator: {fileID: 0}
+  animator: {fileID: 1954490562}
   _speed: 10
   _currentHP: 100
   _currentMana: 100
@@ -244,6 +245,7 @@ MonoBehaviour:
   _hpFill: {fileID: 0}
   _manaFill: {fileID: 0}
   isDead: 0
+  invincibleDash: 0
   dashSpeed: 30
   dashLength: 0.15
   dashCooldown: 1
@@ -289,3 +291,22 @@ MonoBehaviour:
   firepoint: {fileID: 5736281822413461020}
   bulletPrefab: {fileID: 8575425947722445912, guid: 12470cc0902ce6b4ea381713ebfce939, type: 3}
   bulletForce: 20
+--- !u!95 &1954490562
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5736281822791524486}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e0ffd1bc7d55d6c4e91f9eda108f7334, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

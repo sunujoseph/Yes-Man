@@ -4,27 +4,29 @@ using UnityEngine;
 
 public abstract class Pickup : MonoBehaviour
 {
+    public GameObject activeItem;
     //Pickup delay time
- //   public float _waitToPickup = .5f;
+    //   public float _waitToPickup = .5f;
 
 
     // Update is called once per frame
- //   void Update()
- //   {
-        
- //       if (_waitToPickup > 0)
- //       {
- //           _waitToPickup -= Time.deltaTime;
- //       }
- //   }
+    //   void Update()
+    //   {
 
- //   && _waitToPickup <= 0
+    //       if (_waitToPickup > 0)
+    //       {
+    //           _waitToPickup -= Time.deltaTime;
+    //       }
+    //   }
+
+    //   && _waitToPickup <= 0
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player" )
         {
+            Debug.Log("Picked up");
             PickupItem();
-            
+            Destroy(gameObject);
         }
     }
     public abstract void PickupItem();

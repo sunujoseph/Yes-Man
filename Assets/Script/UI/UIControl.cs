@@ -11,8 +11,7 @@ public class UIControl : MonoBehaviour
     public Text _playerManaText;
 
     public Text _currentGoldText;
-
-    public Text _roundTimer;
+    public Text _timeLeft;
     public Text _currentRound;
     
 

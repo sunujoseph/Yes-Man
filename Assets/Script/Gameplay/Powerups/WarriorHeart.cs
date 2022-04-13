@@ -39,4 +39,15 @@ public class WarriorHeart : Pickup
         isActive = false;
 
     }
+    /*void Update()
+    {
+        if (isActive == true)
+        {
+            activeItem.SetActive(true);
+        }
+        else if (isActive == false)
+        {
+            activeItem.SetActive(false);
+        }
+    }*/
 }

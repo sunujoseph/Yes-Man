@@ -40,4 +40,15 @@ public class Bottle_Whispers : Pickup
         isActive = false;
 
     }
+    /*void Update()
+    {
+        if (isActive == true)
+        {
+            activeItem.SetActive(true);
+        }
+        else if (isActive == false)
+        {
+            activeItem.SetActive(false);
+        }
+    }*/
 }

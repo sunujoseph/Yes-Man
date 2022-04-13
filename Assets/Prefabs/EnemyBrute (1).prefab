@@ -227,7 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fec29240408481d43b11dcfde2d32f6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 277800356200113318, guid: 825cf38e72c43914e92162d69a06ac43, type: 3}
+  player: {fileID: 5736281822512241783, guid: a013984778b5bf84f8c3fca3518b993e, type: 3}
   damage: 3
   enemyHealth: 17
   maxHealth: 10

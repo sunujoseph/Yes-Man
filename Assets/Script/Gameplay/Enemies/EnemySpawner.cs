@@ -7,7 +7,7 @@ public class EnemySpawner : MonoBehaviour
     public Transform _spawnParent;
     public List<GameObject> enemySpawner = new List<GameObject>();
 
-    public float minSpawnRange = -10f, maxSpawnRange = 10f;
+    public float minSpawnRange = -17f, maxSpawnRange = 17f;
 
     [SerializeField]float spawnRate = 2.0f;
     [SerializeField]float nextSpawn = 0;
@@ -69,7 +69,7 @@ public class EnemySpawner : MonoBehaviour
         int pickEnemy = Random.Range(0, enemySpawner.Count);
 
         randx = Random.Range(minSpawnRange, maxSpawnRange);
-        randy = Random.Range(-10.0f, 10.0f);
+        randy = Random.Range(-17.0f, 17.0f);
 
         whereToSpawn = new Vector2(randx, randy);
 

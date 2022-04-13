@@ -44,7 +44,10 @@ public class Enemy : MonoBehaviour
             direction = player.transform.position - transform.position;
         }
 
-      
+        CheckDeathCount();
+        CheckOverHeal();
+
+
     }
 
     private void FixedUpdate()
@@ -105,7 +108,7 @@ public class Enemy : MonoBehaviour
             Destroy(boom3.gameObject, 3);
 
             DropLoot();
-            
+            enemyDeathCounter += 1;
             Destroy(gameObject);
             
         }
@@ -143,5 +146,25 @@ public class Enemy : MonoBehaviour
 
         }
 
+    }
+
+    void CheckDeathCount()
+    {
+        if (enemyDeathCounter == 20)
+        {
+            LevelManager.instance.newRound = true;
+        }
+        else if (enemyDeathCounter == 50)
+        {
+            LevelManager.instance.newRound = true;
+        }
+        else if (enemyDeathCounter == 90)
+        {
+            LevelManager.instance.newRound = true;
+        }
+        else if (enemyDeathCounter == 140)
+        {
+            LevelManager.instance.newRound = true;
+        }
     }
 }
