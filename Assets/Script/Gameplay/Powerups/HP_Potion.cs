@@ -5,9 +5,7 @@ using UnityEngine;
 public class HP_Potion : Powerup
 {
     //Increase max health + heals fully
-    public float maxHP_Multiplier = 1.5f;
-
-    public GameObject hpPotion;
+    public float healAmount = 50;
 
     public Transform _flashPoint;
 
@@ -27,14 +25,14 @@ public class HP_Potion : Powerup
             PlayFlashEffect();
 
             isActive = true;
-            StartCoroutine(PowerUpWearOff(15f));
+            StartCoroutine(PowerUpWearOff(60f));
         }
 
 
     }
     IEnumerator PowerUpWearOff(float waitTime)
     {
-        GameObject.FindWithTag("Player").GetComponent<PlayerControl>().IncreaseMaxHP(maxHP_Multiplier); // add boost
+        GameObject.FindWithTag("Player").GetComponent<PlayerControl>().HealDamage(50); // add boost
         yield return new WaitForSeconds(waitTime);
         GameObject.FindWithTag("Player").GetComponent<PlayerControl>().RevertMaxHP(); // remove boost
         isActive = false;

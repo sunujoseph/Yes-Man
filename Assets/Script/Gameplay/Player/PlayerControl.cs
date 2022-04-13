@@ -14,8 +14,8 @@ public class PlayerControl : MonoBehaviour
     Vector2 _movement;
     Vector2 mousePosition;
 
-   
     public float _speed;
+    float startingSpeed;
 
     public float _currentHP = 100.0f;
     private float _maxHP = 100.0f;
@@ -30,10 +30,13 @@ public class PlayerControl : MonoBehaviour
     public GameObject _manaFill;
 
     public bool isDead = false;
+    public bool invincibleDash = false;
+    bool isDashing = false;
 
     //for Dash
     private float activeMoveSpeed;
     public float dashSpeed;
+    float startingDashSpeed;
 
     public float dashLength = 0.5f;
     public float dashCooldown = 1f;
@@ -63,6 +66,12 @@ public class PlayerControl : MonoBehaviour
         activeMoveSpeed = _speed;
 
         startingDashCooldown = dashCooldown;
+
+        startingDashSpeed = dashSpeed;
+
+        startingSpeed = _speed;
+
+        starting_maxHP = _maxHP;
 
         StartHP();
         StartMana();
@@ -100,9 +109,11 @@ public class PlayerControl : MonoBehaviour
         {
             if (dashCoolCounter <= 0 && dashCounter <= 0)
             {
+                isDashing = true;
                 activeMoveSpeed = dashSpeed;
                 dashCounter = dashLength;
                 animator.SetBool("isDash", true);
+                isDashing = false;
             }
         }
 
@@ -150,9 +161,9 @@ public class PlayerControl : MonoBehaviour
 
     public void TakeDamage(float dmg)
     {
+        if (!invincibleDash || !isDashing)
         _currentHP -= dmg;
 
-        
     }
 
     public void HealDamage(float heal)
@@ -221,13 +232,43 @@ public class PlayerControl : MonoBehaviour
         dashCooldown = startingDashCooldown;
     }
 
+    public void IncreaseDashSpeed(float dashSpeedMultiplier)
+    {
+        dashSpeed = startingDashSpeed * dashSpeedMultiplier;
+    }
+    public void RevertDashSpeed()
+    {
+        dashSpeed = startingDashSpeed;
+    }
     public void IncreaseMaxHP(float maxHP_Multiplier)
     {
         _maxHP = starting_maxHP * maxHP_Multiplier;
+        _currentHP = _maxHP;
     }
     public void RevertMaxHP()
     {
         _maxHP = starting_maxHP;
+        if (_currentHP > _maxHP)
+        {
+            _currentHP = _maxHP;
+        }
     }
 
+    public void SetInvincibleDash()
+    {
+        invincibleDash = true;
+    }
+    public void RevertInvincibilty()
+    {
+        invincibleDash = false;
+    }
+
+    public void IncreaseSpeed(float speedMultiplier)
+    {
+        _speed = startingSpeed * speedMultiplier;
+    }
+    public void RevertSpeed()
+    {
+        _speed = startingSpeed;
+    }
 }
