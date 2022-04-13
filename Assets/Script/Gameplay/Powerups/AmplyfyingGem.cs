@@ -7,7 +7,6 @@ public class AmplyfyingGem : Powerup
     //Increase Attack Damage
     public float attackMultiplier = 2;
 
-    public GameObject AmpGem;
 
     public Transform _flashPoint;
 

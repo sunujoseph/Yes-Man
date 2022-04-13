@@ -7,7 +7,6 @@ public class GoblinSachel : Powerup
     //Increase gold collection value
     public int goldValueMultiplier = 3;
 
-    public GameObject GobSatchel;
 
     public Transform _flashPoint;
 

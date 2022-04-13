@@ -23,8 +23,8 @@ public class CoinPickup : Pickup
     }
 
     // Update is called once per frame
-    void Update()
+    void Start()
     {
-        
+        startingGoldValue = goldValue;
     }
 }
