@@ -14,27 +14,15 @@ public class UIControl : MonoBehaviour
 
     public Text _roundTimer;
     public Text _currentRound;
-
-    IDictionary<string, string> powerupInfo = new Dictionary<string, string>();
     
 
     void Awake()
     {
         instance = this;
+        
     }
 
-    void Start()
-    {
-        powerupInfo.Add("Amplyfying Gem", "description");
-        powerupInfo.Add("Bottle of Whispers", "description");
-        powerupInfo.Add("Goblin's Satchel", "description");
-        powerupInfo.Add("Potion of HP", "description");
-        powerupInfo.Add("Naga's Tonic", "description");
-        powerupInfo.Add("Shadowy Cloak", "description");
-        powerupInfo.Add("Sweet Ass Kicks", "description");
-        powerupInfo.Add("Warriors Heart", "description");
-    }
+    
 
-
-
+    
 }

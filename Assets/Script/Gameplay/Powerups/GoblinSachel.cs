@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GoblinSachel : Powerup
+public class GoblinSachel : Pickup
 {
     //Increase gold collection value
     public int goldValueMultiplier = 3;
@@ -19,11 +19,11 @@ public class GoblinSachel : Powerup
         Destroy(spawenedFLash, 5.0f);
     }
 
-    public override void UsePowerup()
+    public override void PickupItem()
     {
         if (isActive == false)
         {
-            PlayFlashEffect();
+            //PlayFlashEffect();
 
             isActive = true;
             StartCoroutine(PowerUpWearOff(15f));

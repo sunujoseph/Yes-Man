@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bottle_Whispers : Powerup
+public class Bottle_Whispers : Pickup
 {
     //DecreaseDashCooldown
     public float cooldownkMultiplier = 0.5f;
@@ -20,11 +20,11 @@ public class Bottle_Whispers : Powerup
         Destroy(spawenedFLash, 5.0f);
     }
 
-    public override void UsePowerup()
+    public override void PickupItem()
     {
         if (isActive == false)
         {
-            PlayFlashEffect();
+            //PlayFlashEffect();
 
             isActive = true;
             StartCoroutine(PowerUpWearOff(15f));

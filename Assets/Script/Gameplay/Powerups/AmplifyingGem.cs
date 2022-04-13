@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AmplyfyingGem : Powerup
+public class AmplifyingGem : Pickup
 {
     //Increase Attack Damage
     public float attackMultiplier = 2;
@@ -12,6 +12,7 @@ public class AmplyfyingGem : Powerup
 
     public GameObject _flashParticle;
 
+    
     bool isActive = false;
     public void PlayFlashEffect()
     {
@@ -19,11 +20,11 @@ public class AmplyfyingGem : Powerup
         Destroy(spawenedFLash, 5.0f);
     }
 
-    public override void UsePowerup()
+    public override void PickupItem()
     {
         if (isActive == false)
         {
-            PlayFlashEffect();
+            //PlayFlashEffect();
 
             isActive = true;
             StartCoroutine(PowerUpWearOff(15f));  

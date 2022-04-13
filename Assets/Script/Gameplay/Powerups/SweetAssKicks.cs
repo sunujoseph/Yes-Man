@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SweetAssKicks : Powerup
+public class SweetAssKicks : Pickup
 {
     public float speedMultiplier = 3;
 
@@ -17,11 +17,11 @@ public class SweetAssKicks : Powerup
         Destroy(spawenedFLash, 5.0f);
     }
 
-    public override void UsePowerup()
+    public override void PickupItem()
     {
         if (isActive == false)
         {
-            PlayFlashEffect();
+            //PlayFlashEffect();
 
             isActive = true;
             StartCoroutine(PowerUpWearOff(20f));

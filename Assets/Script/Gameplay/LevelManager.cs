@@ -7,7 +7,11 @@ public class LevelManager : MonoBehaviour
 {
     public bool isPaused = false;
 
-    
+    public GameObject Spawner1;
+    public GameObject Spawner2;
+    public GameObject Spawner3;
+    public GameObject Spawner4;
+
 
     void Update()
     {

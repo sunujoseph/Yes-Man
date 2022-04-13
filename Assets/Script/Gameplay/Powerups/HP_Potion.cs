@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HP_Potion : Powerup
+public class HP_Potion : Pickup
 {
     //Increase max health + heals fully
     public float healAmount = 50;
@@ -18,11 +18,11 @@ public class HP_Potion : Powerup
         Destroy(spawenedFLash, 5.0f);
     }
 
-    public override void UsePowerup()
+    public override void PickupItem()
     {
         if (isActive == false)
         {
-            PlayFlashEffect();
+            //PlayFlashEffect();
 
             isActive = true;
             StartCoroutine(PowerUpWearOff(60f));

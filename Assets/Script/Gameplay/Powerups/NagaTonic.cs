@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NagaTonic : Powerup
+public class NagaTonic : Pickup
 {
     //Increase dash speed
     public float dashSpeedMultiplier = 3;
@@ -19,11 +19,11 @@ public class NagaTonic : Powerup
         Destroy(spawenedFLash, 5.0f);
     }
 
-    public override void UsePowerup()
+    public override void PickupItem()
     {
         if (isActive == false)
         {
-            PlayFlashEffect();
+            //PlayFlashEffect();
 
             isActive = true;
             StartCoroutine(PowerUpWearOff(20f));
