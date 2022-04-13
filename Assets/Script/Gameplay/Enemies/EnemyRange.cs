@@ -16,7 +16,7 @@ public class EnemyRange : Enemy
 
     public float range;
 
- 
+    
 
 
     private void FixedUpdate()

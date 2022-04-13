@@ -97,10 +97,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10446cfcd4524ef47ae2656b25209a1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 277800356200113314, guid: 825cf38e72c43914e92162d69a06ac43, type: 3}
+  target: {fileID: 5736281822791524486, guid: a013984778b5bf84f8c3fca3518b993e, type: 3}
   arrowSpeed: 10
   damage: 10
-  player: {fileID: 9074380548955687002, guid: 2a678c73e81c9524b86cbeeba8d0b78e, type: 3}
+  player: {fileID: 5736281822791524486, guid: a013984778b5bf84f8c3fca3518b993e, type: 3}
 --- !u!50 &4840949245904154683
 Rigidbody2D:
   serializedVersion: 4
