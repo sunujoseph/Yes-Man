@@ -16,6 +16,11 @@ public class BossBullet : MonoBehaviour
     }
 
 
+    private void Update()
+    {
+        transform.Rotate(0, 0, 240 * Time.deltaTime); 
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
