@@ -330,10 +330,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4553081005123648514, guid: 31324b2fb85c80c4399bfd4757ef34ee, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5803279881610581841, guid: 31324b2fb85c80c4399bfd4757ef34ee, type: 3}
       propertyPath: m_Name
       value: UI Canvas
@@ -779,6 +775,10 @@ PrefabInstance:
       propertyPath: _hpFill
       value: 
       objectReference: {fileID: 367165246}
+    - target: {fileID: 5736281822791524507, guid: a013984778b5bf84f8c3fca3518b993e, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1954490562}
     - target: {fileID: 5736281822791524507, guid: a013984778b5bf84f8c3fca3518b993e, type: 3}
       propertyPath: _manaFill
       value: 
