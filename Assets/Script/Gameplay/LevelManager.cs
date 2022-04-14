@@ -44,11 +44,6 @@ public class LevelManager : MonoBehaviour
             currentRound = 1;
             StartFirstRound();
         }
-        else if (sceneName == "BossScene")
-        {
-            ActiveScene = "Boss";
-            currentRound = 5;
-        }
         else if (sceneName == "Tutorial")
         {
             ActiveScene = "Tutorial";
@@ -181,7 +176,12 @@ public class LevelManager : MonoBehaviour
             spawner3.SetActive(false);
             spawner4.SetActive(true);
         }
-        
+        if (currentRound == 5)
+        {
+            spawner4.SetActive(false);
+            boss.SetActive(true);
+        }
+
     }
 
 
