@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: -4661489395684086316}
   - component: {fileID: -2680367120831728321}
   - component: {fileID: 8201048425483067301}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bottle of Whispers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 62998f272f75a974aa77dcbfe4fc2c8d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -99,7 +99,6 @@ MonoBehaviour:
   itemUI: {fileID: 5308152515671430253, guid: 82ee4efe14cf5c94bb9d28683acbdb1d, type: 3}
   isActive: 0
   cooldownkMultiplier: 0.5
-  BottleOfWhispers: {fileID: 0}
   _flashPoint: {fileID: 0}
   _flashParticle: {fileID: 0}
 --- !u!61 &8201048425483067301

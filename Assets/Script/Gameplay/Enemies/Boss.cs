@@ -10,7 +10,7 @@ public class Boss : MonoBehaviour
 
     public GameObject portal;
 
-    public GameObject winScreen;
+    //public GameObject winScreen;
 
     public float damage = 2.0f;
 
@@ -40,7 +40,7 @@ public class Boss : MonoBehaviour
         _rb = GetComponent<Rigidbody2D>();
 
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        winScreen.SetActive(false);
+        //winScreen.SetActive(false);
     }
 
     void Update()
@@ -104,31 +104,31 @@ public class Boss : MonoBehaviour
             switch (i)
             {
                 case 0:
-                    rb.AddForce(arrowParent.transform.up * arrowForce + new Vector3(0f, -90f, 0f));
+                    rb.AddForce(arrowParent.transform.up + new Vector3(0f, -90f, 0f) * arrowForce);
                     break;
                 case 1:
-                    rb.AddForce(arrowParent.transform.up * arrowForce + new Vector3(90f, 90f, 0f));
+                    rb.AddForce(arrowParent.transform.up + new Vector3(90f, 90f, 0f) * arrowForce);
                     break;
                 case 2:
-                    rb.AddForce(arrowParent.transform.up * arrowForce + new Vector3(0f, 90f, 0f));
+                    rb.AddForce(arrowParent.transform.up + new Vector3(0f, 90f, 0f) * arrowForce);
                     break;
                 case 3:
-                    rb.AddForce(arrowParent.transform.up * arrowForce + new Vector3(90f, 0f, 0f));
+                    rb.AddForce(arrowParent.transform.up + new Vector3(90f, 0f, 0f) * arrowForce);
                     break;
                 case 4:
-                    rb.AddForce(arrowParent.transform.up * arrowForce + new Vector3(-90f, 0f, 0f));
+                    rb.AddForce(arrowParent.transform.up + new Vector3(-90f, 0f, 0f) * arrowForce);
                     break;
                 case 5:
-                    rb.AddForce(arrowParent.transform.up * arrowForce + new Vector3(-90f, 90f, 0f));
+                    rb.AddForce(arrowParent.transform.up + new Vector3(-90f, 90f, 0f) * arrowForce);
                     break;
                 case 6:
-                    rb.AddForce(arrowParent.transform.up * arrowForce + new Vector3(90f, -90f, 0f));
+                    rb.AddForce(arrowParent.transform.up + new Vector3(90f, -90f, 0f) * arrowForce);
                     break;
                 case 7:
-                    rb.AddForce(arrowParent.transform.up * arrowForce + new Vector3(-90f, -90f, 0f));
+                    rb.AddForce(arrowParent.transform.up + new Vector3(-90f, -90f, 0f) * arrowForce);
                     break;
             }
-
+            //Vector2 moveDir = (player.transform.position - transform.position).normalized * bulletSpeed
 
            // rb.AddForce(arrowParent.transform.up * arrowForce, ForceMode2D.Impulse);
         }
@@ -150,7 +150,7 @@ public class Boss : MonoBehaviour
 
             Destroy(gameObject);
 
-            StartCoroutine(openWinScreen());
+            //StartCoroutine(openWinScreen());
             Instantiate(portal, new Vector2(0,0), Quaternion.identity);
         }
     }
@@ -172,13 +172,13 @@ public class Boss : MonoBehaviour
         }
     }
 
-    IEnumerator openWinScreen()
-    {
-        winScreen.SetActive(true);
+    //IEnumerator openWinScreen()
+    //{
+       // winScreen.SetActive(true);
 
-        yield return new WaitForSeconds(5.0f);
+    //    yield return new WaitForSeconds(5.0f);
 
-        winScreen.SetActive(false);
-    }
+   //     winScreen.SetActive(false);
+  //  }
 
 }

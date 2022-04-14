@@ -6,23 +6,22 @@ public abstract class Pickup : MonoBehaviour
 {
     
     //Pickup delay time
-    //   public float _waitToPickup = .5f;
+      public float _waitToPickup = .5f;
 
 
-    // Update is called once per frame
-    //   void Update()
-    //   {
+     //Update is called once per frame
+     void Update()
+     {
+         if (_waitToPickup > 0)
+         {
+             _waitToPickup -= Time.deltaTime;
+         }
+     }
 
-    //       if (_waitToPickup > 0)
-    //       {
-    //           _waitToPickup -= Time.deltaTime;
-    //       }
-    //   }
-
-    //   && _waitToPickup <= 0
+       
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player" )
+        if (collision.tag == "Player" && _waitToPickup <= 0)
         {
             Debug.Log("Picked up");
             PickupItem();

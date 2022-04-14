@@ -4,38 +4,48 @@ using UnityEngine;
 
 public class Powerup : MonoBehaviour
 {
-    public GameObject itemUI;
+    public int itemAmount;
+
+    //public float duration;
+
+    private void Update()
+    {
+        UpdateAmountText();
+        KeyActivate();
+    }
     public virtual void UsePowerup()
     {
-
+        Debug.Log(this.gameObject.name + "used");
     }
-
 
     public bool isActive = false;
 
-    void Update()
+    public virtual void CheckAmount()
     {
-        if (isActive == true)
-        {
-            itemUI.SetActive(true);
 
-        }
-
-        {
-            itemUI.SetActive(false);
-        }
-
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            UsePowerup();
-            Debug.Log("Powered up " + itemUI);
-        }
     }
+
+    public void StoreItem()
+    {
+        itemAmount += 1;
+    }
+
+    public virtual void UpdateAmountText()
+    {
+        
+    }
+
+    public virtual void KeyActivate()
+    {
+
+    }
+
+
 }
 
-    
 
-    
 
-    
+
+
+
 

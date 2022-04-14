@@ -116,7 +116,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -146,5 +146,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 9074380548955687002, guid: 2a678c73e81c9524b86cbeeba8d0b78e, type: 3}
   arrowSpeed: 5
-  _rb: {fileID: 1789177069137545805}
   damage: 10
+  player: {fileID: 0}
