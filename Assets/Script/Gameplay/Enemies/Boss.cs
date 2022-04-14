@@ -48,7 +48,7 @@ public class Boss : MonoBehaviour
         {
             direction = player.transform.position - transform.position;
         }
-
+            
 
         healthBar.value = enemyHealth;
 
