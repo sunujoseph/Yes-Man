@@ -104,31 +104,31 @@ public class Boss : MonoBehaviour
             switch (i)
             {
                 case 0:
-                    rb.AddForce(arrowParent.transform.up * arrowForce + new Vector3(0f, -90f, 0f));
+                    rb.AddForce(arrowParent.transform.up + new Vector3(0f, -90f, 0f) * arrowForce);
                     break;
                 case 1:
-                    rb.AddForce(arrowParent.transform.up * arrowForce + new Vector3(90f, 90f, 0f));
+                    rb.AddForce(arrowParent.transform.up + new Vector3(90f, 90f, 0f) * arrowForce);
                     break;
                 case 2:
-                    rb.AddForce(arrowParent.transform.up * arrowForce + new Vector3(0f, 90f, 0f));
+                    rb.AddForce(arrowParent.transform.up + new Vector3(0f, 90f, 0f) * arrowForce);
                     break;
                 case 3:
-                    rb.AddForce(arrowParent.transform.up * arrowForce + new Vector3(90f, 0f, 0f));
+                    rb.AddForce(arrowParent.transform.up + new Vector3(90f, 0f, 0f) * arrowForce);
                     break;
                 case 4:
-                    rb.AddForce(arrowParent.transform.up * arrowForce + new Vector3(-90f, 0f, 0f));
+                    rb.AddForce(arrowParent.transform.up + new Vector3(-90f, 0f, 0f) * arrowForce);
                     break;
                 case 5:
-                    rb.AddForce(arrowParent.transform.up * arrowForce + new Vector3(-90f, 90f, 0f));
+                    rb.AddForce(arrowParent.transform.up + new Vector3(-90f, 90f, 0f) * arrowForce);
                     break;
                 case 6:
-                    rb.AddForce(arrowParent.transform.up * arrowForce + new Vector3(90f, -90f, 0f));
+                    rb.AddForce(arrowParent.transform.up + new Vector3(90f, -90f, 0f) * arrowForce);
                     break;
                 case 7:
-                    rb.AddForce(arrowParent.transform.up * arrowForce + new Vector3(-90f, -90f, 0f));
+                    rb.AddForce(arrowParent.transform.up + new Vector3(-90f, -90f, 0f) * arrowForce);
                     break;
             }
-
+            //Vector2 moveDir = (player.transform.position - transform.position).normalized * bulletSpeed
 
            // rb.AddForce(arrowParent.transform.up * arrowForce, ForceMode2D.Impulse);
         }
