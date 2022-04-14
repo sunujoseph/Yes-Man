@@ -10,7 +10,6 @@ public class PlayerControl : MonoBehaviour
     public Camera cam;
     public GameObject player;
     public Animator animator;
-    public List<AudioClip> voiceLines = new List<AudioClip>();
     public AudioSource sources;
 
     Vector2 _movement;
@@ -53,6 +52,7 @@ public class PlayerControl : MonoBehaviour
 
     [SerializeField] FlashImage _flashImage;
 
+    public List<GameObject> itemsToDrop = new List<GameObject>();
     private void Awake()
     {
         if (_rb == null)
@@ -219,6 +219,11 @@ public class PlayerControl : MonoBehaviour
     public void AddGold(int goldValue)
     {
         currentGold += goldValue;
+        if (currentGold >= 10)
+        {
+            Shooping();
+
+        }
     } 
 
 
@@ -278,5 +283,13 @@ public class PlayerControl : MonoBehaviour
     public void RevertSpeed()
     {
         _speed = startingSpeed;
+    }
+    public void Shooping()
+    {
+        currentGold -= 10;
+        float randomItem = Random.Range(0, itemsToDrop.Count);
+        int itemKey = Mathf.RoundToInt(randomItem);
+
+        Instantiate(itemsToDrop[itemKey], transform.position, Quaternion.Euler(0f, 0f, 0f));
     }
 }
