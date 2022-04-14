@@ -13367,7 +13367,7 @@ PrefabInstance:
       objectReference: {fileID: 18542479}
     - target: {fileID: 5736281822791524507, guid: a013984778b5bf84f8c3fca3518b993e, type: 3}
       propertyPath: currentGold
-      value: 50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5736281822791524507, guid: a013984778b5bf84f8c3fca3518b993e, type: 3}
       propertyPath: voiceLines.Array.size
