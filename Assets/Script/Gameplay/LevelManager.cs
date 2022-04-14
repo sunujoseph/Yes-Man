@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
     public bool isPaused = false;
-    float timeLeft = 300;
+    public float timeLeft = 300;
     float timeLeftInt;
 
     public static LevelManager instance;
@@ -71,7 +71,7 @@ public class LevelManager : MonoBehaviour
             case 4:
             case 5:
                 timeLeft -= Time.deltaTime;
-                if (timeLeft < 0)
+                if (timeLeft <= 0)
                 {
                     StartCoroutine(LevelEnd());
                 }
@@ -125,7 +125,7 @@ public class LevelManager : MonoBehaviour
 
         if (currentRound >= 5)
         {
-            SceneManager.LoadScene(6);
+            SceneManager.LoadScene(5);
         }
     }
 
