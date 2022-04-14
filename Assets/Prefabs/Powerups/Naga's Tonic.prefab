@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: c9902c633abe74147858423d3591c228, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -96,7 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98879ca0a3f14404ca5fde771a92d5b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeItem: {fileID: 2831796473035457284, guid: 1fad16f1820efd04ba235584c0f09ad1, type: 3}
+  itemUI: {fileID: 6477371685719351964, guid: dfdaed95003270644b56b27b8c937dce, type: 3}
+  isActive: 0
   dashSpeedMultiplier: 3
   _flashPoint: {fileID: 0}
   _flashParticle: {fileID: 0}

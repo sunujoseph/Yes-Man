@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 62998f272f75a974aa77dcbfe4fc2c8d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -96,7 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f39f26699e3b0a43a45e391404ca8c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeItem: {fileID: 7984416081404473142, guid: d1b85b14317ab654c9f0760591b061e6, type: 3}
+  itemUI: {fileID: 5308152515671430253, guid: 82ee4efe14cf5c94bb9d28683acbdb1d, type: 3}
+  isActive: 0
   cooldownkMultiplier: 0.5
   BottleOfWhispers: {fileID: 0}
   _flashPoint: {fileID: 0}

@@ -2,25 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bottle_Whispers : Pickup
+public class Bottle_Whispers : Powerup
 {
     //DecreaseDashCooldown
     public float cooldownkMultiplier = 0.5f;
 
-    public GameObject BottleOfWhispers;
+    
 
     public Transform _flashPoint;
 
     public GameObject _flashParticle;
 
-    bool isActive = false;
+   
     public void PlayFlashEffect()
     {
         GameObject spawenedFLash = Instantiate(_flashParticle, _flashPoint.position, _flashPoint.rotation, _flashPoint);
         Destroy(spawenedFLash, 5.0f);
     }
 
-    public override void PickupItem()
+    public override void UsePowerup()
     {
         if (isActive == false)
         {
@@ -40,15 +40,5 @@ public class Bottle_Whispers : Pickup
         isActive = false;
 
     }
-    /*void Update()
-    {
-        if (isActive == true)
-        {
-            activeItem.SetActive(true);
-        }
-        else if (isActive == false)
-        {
-            activeItem.SetActive(false);
-        }
-    }*/
+    
 }
