@@ -159,5 +159,5 @@ MonoBehaviour:
   itemsToDrop: []
   dashRange: 10
   dashRate: 0.5
-  nextDashCounter: 3
-  dashSpeed: 5
+  nextDashCounter: 0
+  dashSpeed: 6

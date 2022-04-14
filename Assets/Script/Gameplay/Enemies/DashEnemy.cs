@@ -54,9 +54,9 @@ public class DashEnemy : Enemy
             {
 
                 _dasherRB.AddForce(new Vector2(direction.x, direction.y), ForceMode2D.Impulse);
-                AudioManager.instance.EnemyDash();
-                transform.position = Vector2.MoveTowards(transform.position, target.transform.position, (dashSpeed * Time.deltaTime));
                 
+                transform.position = Vector2.MoveTowards(transform.position, target.transform.position, (dashSpeed * Time.deltaTime));
+                AudioManager.instance.EnemyDash();
                 nextDashCounter = Time.time + dashRate;
                 
             }

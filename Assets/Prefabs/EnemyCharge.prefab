@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3399744910432551087}
   - component: {fileID: 3399744910432551084}
   - component: {fileID: 3399744910432551085}
-  - component: {fileID: 3399744910432551082}
+  - component: {fileID: 5408762063844740231}
   m_Layer: 9
   m_Name: EnemyCharge
   m_TagString: Enemy
@@ -132,7 +132,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &3399744910432551082
+--- !u!114 &5408762063844740231
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,9 +146,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 5736281822512241783, guid: a013984778b5bf84f8c3fca3518b993e, type: 3}
   damage: 2
-  enemyHealth: 5
-  maxHealth: 5
-  speed: 2
+  enemyHealth: 10
+  maxHealth: 10
+  speed: 3
   lineOfSite: 15
   direction: {x: 0, y: 0, z: 0}
   enemyDeathCounter: 0
@@ -160,6 +160,6 @@ MonoBehaviour:
   - {fileID: 2961968517165157301, guid: 1b1940a66c1a1e7438e3d2025ab8b42f, type: 3}
   - {fileID: 316530380625023437, guid: 5f2570b4c69fe92499eec2679e40fba9, type: 3}
   dashRange: 10
-  dashRate: 2
-  nextDashCounter: 5
-  dashSpeed: 2
+  dashRate: 1
+  nextDashCounter: 0
+  dashSpeed: 4
