@@ -44,8 +44,4 @@ public class AudioManager : MonoBehaviour
         dashSFX.Play();
     }
 
-    public void EnemyGag()
-    {
-
-    }
 }

@@ -10,6 +10,8 @@ public class PlayerControl : MonoBehaviour
     public Camera cam;
     public GameObject player;
     public Animator animator;
+    public List<AudioClip> voiceLines = new List<AudioClip>();
+    public AudioSource sources;
 
     Vector2 _movement;
     Vector2 mousePosition;
@@ -25,6 +27,8 @@ public class PlayerControl : MonoBehaviour
     private float _maxMana = 100.0f;
 
     public int currentGold;
+    int deathline;
+    int number;
 
     public GameObject _hpFill;
     public GameObject _manaFill;
@@ -54,9 +58,9 @@ public class PlayerControl : MonoBehaviour
         if (_rb == null)
         {
             _rb = GetComponent<Rigidbody2D>();
+
         }
 
-       
     }
 
 
@@ -75,6 +79,7 @@ public class PlayerControl : MonoBehaviour
 
         StartHP();
         StartMana();
+        
     }
 
     void Update()
@@ -179,11 +184,11 @@ public class PlayerControl : MonoBehaviour
     {
         if (_currentHP <= 0.0f && !isDead)
         {
-
+            sources.Play();
             _currentHP = 0.0f;
             isDead = true;
             player.SetActive(false);
-
+            
             SceneManager.LoadScene(4);
             
             //Destroy(gameObject);
