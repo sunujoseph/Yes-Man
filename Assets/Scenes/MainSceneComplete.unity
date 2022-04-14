@@ -5619,7 +5619,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Bottle O''Whispers
 
-    Damage x2
+    Decrease Dash Cooldown
 
     -10 Gold-'
 --- !u!222 &933084939
@@ -6619,7 +6619,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Shadowy Cloak
 
-    Damage x2
+    Dash Immunity Increased
 
     -10 Gold-'
 --- !u!222 &1101195658
@@ -8335,7 +8335,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Amplifying gem
 
-    Damage x2
+    Increase Damage
 
     -10 Gold-'
 --- !u!222 &1383036584
@@ -8434,7 +8434,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Potion of HP
 
-    Damage x2
+    Increase Hp and Heal
 
     -10 Gold-'
 --- !u!222 &1393195561
@@ -9353,7 +9353,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Goblin Satchel
 
-    Damage x2
+    Increase Gold Gain
 
     -10 Gold-'
 --- !u!222 &1649915377
@@ -10168,7 +10168,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Naga''s Tonic
 
-    Damage x2
+    Increase Dash Speed
 
     -10 Gold-'
 --- !u!222 &1743666889
@@ -11761,7 +11761,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Warrior''s Heart
 
-    Damage x2
+    Increase Hp
 
     -10 Gold-'
 --- !u!222 &2072847780
@@ -13906,7 +13906,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8782100693302464812, guid: 5a97404dcffcece4db1f839507250554, type: 3}
       propertyPath: _desiredEnemies
-      value: 140
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8782100693302464812, guid: 5a97404dcffcece4db1f839507250554, type: 3}
       propertyPath: enemySpawner.Array.size
@@ -13963,14 +13963,14 @@ PrefabInstance:
     - target: {fileID: 8782100694559789274, guid: 5a97404dcffcece4db1f839507250554, type: 3}
       propertyPath: enemySpawner.Array.data[0]
       value: 
-      objectReference: {fileID: 4070749980228449844, guid: 26b402ad9ac4f9c45a8e7752af222ee8, type: 3}
+      objectReference: {fileID: 610866860502915745, guid: 26b402ad9ac4f9c45a8e7752af222ee8, type: 3}
     - target: {fileID: 8782100694559789274, guid: 5a97404dcffcece4db1f839507250554, type: 3}
       propertyPath: enemySpawner.Array.data[1]
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8782100695073609670, guid: 5a97404dcffcece4db1f839507250554, type: 3}
       propertyPath: _desiredEnemies
-      value: 50
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8782100695073609670, guid: 5a97404dcffcece4db1f839507250554, type: 3}
       propertyPath: enemySpawner.Array.size
@@ -13986,7 +13986,7 @@ PrefabInstance:
       objectReference: {fileID: 3805312268770380941, guid: 951ed82f9d3c6dd44a1e35a5e9ba851f, type: 3}
     - target: {fileID: 8782100695176756785, guid: 5a97404dcffcece4db1f839507250554, type: 3}
       propertyPath: _desiredEnemies
-      value: 90
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8782100695176756785, guid: 5a97404dcffcece4db1f839507250554, type: 3}
       propertyPath: enemySpawner.Array.size
