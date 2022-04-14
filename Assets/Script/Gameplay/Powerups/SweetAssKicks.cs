@@ -37,5 +37,39 @@ public class SweetAssKicks : Powerup
         isActive = false;
 
     }
-    
+
+    public override void CheckAmount()
+    {
+        if (itemAmount > 0)
+        {
+            UsePowerup();
+            itemAmount -= 1;
+            UIControl.instance.shoesAmountText.text = itemAmount.ToString();
+        }
+    }
+
+    public override void UpdateAmountText()
+    {
+        UIControl.instance.shoesAmountText.text = itemAmount.ToString();
+    }
+
+    public override void KeyActivate()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha7))
+        {
+            CheckAmount();
+        }
+    }
+
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.tag == "Player")
+    //    {
+    //        Debug.Log("Picked up");
+    //        UsePowerup();
+    //        Destroy(gameObject);
+    //    }
+    //}
+
+
 }

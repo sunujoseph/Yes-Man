@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: -8582898661905082721}
   - component: {fileID: 6316001087985209977}
   - component: {fileID: 143942943830135860}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Instant HP Drop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 2938658541179505555, guid: 59ed411ac1985a0429e7e79c201b9609, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
