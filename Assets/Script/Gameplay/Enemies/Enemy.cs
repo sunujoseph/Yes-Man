@@ -19,7 +19,7 @@ public class Enemy : MonoBehaviour
 
     [HideInInspector] public Vector3 direction;
     //number of enemies that have been killed
-    public int enemyDeathCounter;
+    public int enemyDeathCounter = 0;
 
     public Transform deathEffect, deathEffect2, deathEffect3;
 

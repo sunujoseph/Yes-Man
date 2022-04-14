@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 5736281822512241783, guid: a013984778b5bf84f8c3fca3518b993e, type: 3}
-  damage: 2
+  damage: 1
   enemyHealth: 15
   maxHealth: 15
   speed: 3
