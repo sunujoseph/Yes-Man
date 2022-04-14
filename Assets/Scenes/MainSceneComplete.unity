@@ -1166,6 +1166,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6bc431c1e7b3824fbc1b042816d7908, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inBuyZone: 0
+  playerGold: 0
   itemPrice: 10
   buyMessage: {fileID: 998521150}
 --- !u!1 &161544511
@@ -2041,6 +2043,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6bc431c1e7b3824fbc1b042816d7908, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inBuyZone: 0
+  playerGold: 0
   itemPrice: 10
   buyMessage: {fileID: 2011796354}
 --- !u!1001 &327899292
@@ -2298,6 +2302,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6bc431c1e7b3824fbc1b042816d7908, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inBuyZone: 0
+  playerGold: 0
   itemPrice: 10
   buyMessage: {fileID: 1734214557}
 --- !u!1 &361353208
@@ -3868,6 +3874,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.72, y: 2.52}
   m_EdgeRadius: 0
+--- !u!1 &605818242 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8782100694559789276, guid: 5a97404dcffcece4db1f839507250554, type: 3}
+  m_PrefabInstance: {fileID: 8782100694962468310}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &620499376
 GameObject:
   m_ObjectHideFlags: 0
@@ -4556,6 +4567,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6bc431c1e7b3824fbc1b042816d7908, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inBuyZone: 0
+  playerGold: 0
   itemPrice: 10
   buyMessage: {fileID: 1641593994}
 --- !u!1 &694808601
@@ -6383,6 +6396,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6bc431c1e7b3824fbc1b042816d7908, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inBuyZone: 0
+  playerGold: 0
   itemPrice: 10
   buyMessage: {fileID: 1949332178}
 --- !u!1 &1088787408
@@ -7152,6 +7167,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6bc431c1e7b3824fbc1b042816d7908, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inBuyZone: 0
+  playerGold: 0
   itemPrice: 10
   buyMessage: {fileID: 74194572}
 --- !u!1 &1253968532
@@ -8614,6 +8631,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6bc431c1e7b3824fbc1b042816d7908, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inBuyZone: 0
+  playerGold: 0
   itemPrice: 10
   buyMessage: {fileID: 1359514871}
 --- !u!1 &1475355357
@@ -9145,6 +9164,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6bc431c1e7b3824fbc1b042816d7908, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inBuyZone: 0
+  playerGold: 0
   itemPrice: 10
   buyMessage: {fileID: 1146437253}
 --- !u!1 &1611747054 stripped
@@ -12000,7 +12021,7 @@ MonoBehaviour:
   ActiveScene: 
   currentRound: 1
   newRound: 0
-  boss: {fileID: 0}
+  boss: {fileID: 605818242}
   spawner1: {fileID: 1611747054}
   spawner2: {fileID: 1415105476}
   spawner3: {fileID: 1021450120}
@@ -13931,6 +13952,22 @@ PrefabInstance:
       propertyPath: enemySpawner.Array.data[2]
       value: 
       objectReference: {fileID: 3399744910432551083, guid: 9cfc44083eb80e140b9f906eaca021d3, type: 3}
+    - target: {fileID: 8782100694559789274, guid: 5a97404dcffcece4db1f839507250554, type: 3}
+      propertyPath: _desiredEnemies
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782100694559789274, guid: 5a97404dcffcece4db1f839507250554, type: 3}
+      propertyPath: enemySpawner.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782100694559789274, guid: 5a97404dcffcece4db1f839507250554, type: 3}
+      propertyPath: enemySpawner.Array.data[0]
+      value: 
+      objectReference: {fileID: 4070749980228449844, guid: 26b402ad9ac4f9c45a8e7752af222ee8, type: 3}
+    - target: {fileID: 8782100694559789274, guid: 5a97404dcffcece4db1f839507250554, type: 3}
+      propertyPath: enemySpawner.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8782100695073609670, guid: 5a97404dcffcece4db1f839507250554, type: 3}
       propertyPath: _desiredEnemies
       value: 50
