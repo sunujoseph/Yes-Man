@@ -19,7 +19,7 @@ public class Enemy : MonoBehaviour
 
     [HideInInspector] public Vector3 direction;
     //number of enemies that have been killed
-    public int enemyDeathCounter;
+    public int enemyDeathCounter = 0;
 
     public Transform deathEffect, deathEffect2, deathEffect3;
 
@@ -108,7 +108,7 @@ public class Enemy : MonoBehaviour
             Destroy(boom3.gameObject, 3);
 
             DropLoot();
-            enemyDeathCounter += 1;
+            enemyDeathCounter +=1 ;
             Destroy(gameObject);
             
         }
