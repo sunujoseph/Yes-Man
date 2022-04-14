@@ -156,8 +156,10 @@ MonoBehaviour:
   deathEffect2: {fileID: 1761458857357641057, guid: 8e598fccb0f62cb498b1ede0cd433bbc, type: 3}
   deathEffect3: {fileID: 1761458857357641057, guid: e619da6a266b84940816d20879507683, type: 3}
   itemDropPercent: 75
-  itemsToDrop: []
+  itemsToDrop:
+  - {fileID: 2961968517165157301, guid: 1b1940a66c1a1e7438e3d2025ab8b42f, type: 3}
+  - {fileID: 316530380625023437, guid: 5f2570b4c69fe92499eec2679e40fba9, type: 3}
   dashRange: 10
-  dashRate: 1
-  nextDashCounter: 0
-  dashSpeed: 10
+  dashRate: 2
+  nextDashCounter: 5
+  dashSpeed: 2
