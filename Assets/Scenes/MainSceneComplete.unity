@@ -5619,7 +5619,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Bottle O''Whispers
 
-    Damage x2
+    Decrease Dash Cooldown
 
     -10 Gold-'
 --- !u!222 &933084939
@@ -6619,7 +6619,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Shadowy Cloak
 
-    Damage x2
+    Dash Immunity Increased
 
     -10 Gold-'
 --- !u!222 &1101195658
@@ -8335,7 +8335,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Amplifying gem
 
-    Damage x2
+    Increase Damage
 
     -10 Gold-'
 --- !u!222 &1383036584
@@ -8434,7 +8434,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Potion of HP
 
-    Damage x2
+    Increase Hp and Heal
 
     -10 Gold-'
 --- !u!222 &1393195561
@@ -9353,7 +9353,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Goblin Satchel
 
-    Damage x2
+    Increase Gold Gain
 
     -10 Gold-'
 --- !u!222 &1649915377
@@ -10168,7 +10168,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Naga''s Tonic
 
-    Damage x2
+    Increase Dash Speed
 
     -10 Gold-'
 --- !u!222 &1743666889
@@ -11761,7 +11761,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Warrior''s Heart
 
-    Damage x2
+    Increase Hp
 
     -10 Gold-'
 --- !u!222 &2072847780
