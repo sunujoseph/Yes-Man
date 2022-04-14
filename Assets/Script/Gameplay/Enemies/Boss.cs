@@ -10,7 +10,6 @@ public class Boss : MonoBehaviour
 
     public GameObject portal;
 
-    //public GameObject winScreen;
 
     public float damage = 2.0f;
 
@@ -150,7 +149,7 @@ public class Boss : MonoBehaviour
 
             Destroy(gameObject);
 
-            //StartCoroutine(openWinScreen());
+           
             Instantiate(portal, new Vector2(0,0), Quaternion.identity);
         }
     }
