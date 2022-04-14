@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class Pickup : MonoBehaviour
 {
-    public GameObject activeItem;
+    
     //Pickup delay time
     //   public float _waitToPickup = .5f;
 

@@ -14,9 +14,9 @@ public class EnemySpawner : MonoBehaviour
     float randx;
     float randy;
 
-    public int _desiredEnemies = 5;
+    public int _desiredEnemies;
     private bool _canSpawn = true;
-    public static int _totalEnemies = 0;
+    public int _totalEnemies = 0;
 
 
     Vector2 whereToSpawn;

@@ -13,11 +13,12 @@ public class UIControl : MonoBehaviour
     public Text _currentGoldText;
     public Text _timeLeft;
     public Text _currentRound;
-    
 
+    
     void Awake()
     {
         instance = this;
+        
         
     }
 

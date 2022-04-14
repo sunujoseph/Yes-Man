@@ -108,7 +108,7 @@ public class Enemy : MonoBehaviour
             Destroy(boom3.gameObject, 3);
 
             DropLoot();
-            enemyDeathCounter +=1 ;
+            enemyDeathCounter ++;
             Destroy(gameObject);
             
         }
