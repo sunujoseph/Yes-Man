@@ -158,6 +158,6 @@ MonoBehaviour:
   itemDropPercent: 75
   itemsToDrop: []
   dashRange: 10
-  dashRate: 0.5
+  dashRate: 0.75
   nextDashCounter: 0
-  dashSpeed: 7
+  dashSpeed: 15

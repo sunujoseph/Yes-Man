@@ -160,4 +160,4 @@ MonoBehaviour:
   dashRange: 10
   dashRate: 1
   nextDashCounter: 0
-  dashSpeed: 5
+  dashSpeed: 10
