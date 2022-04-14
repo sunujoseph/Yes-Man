@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 2c3d862c2ca794044931b4fcea10da44, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -156,7 +156,9 @@ MonoBehaviour:
   deathEffect2: {fileID: 1761458857357641057, guid: 8e598fccb0f62cb498b1ede0cd433bbc, type: 3}
   deathEffect3: {fileID: 1761458857357641057, guid: e619da6a266b84940816d20879507683, type: 3}
   itemDropPercent: 75
-  itemsToDrop: []
+  itemsToDrop:
+  - {fileID: 2961968517165157301, guid: 1b1940a66c1a1e7438e3d2025ab8b42f, type: 3}
+  - {fileID: 316530380625023437, guid: 5f2570b4c69fe92499eec2679e40fba9, type: 3}
   dashRange: 10
   dashRate: 0.7
   nextDashCounter: 0

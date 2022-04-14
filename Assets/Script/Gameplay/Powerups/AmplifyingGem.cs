@@ -2,26 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AmplifyingGem : Pickup
+public class AmplifyingGem : Powerup
 {
     //Increase Attack Damage
     public float attackMultiplier = 2;
-
-    
 
     public Transform _flashPoint;
 
     public GameObject _flashParticle;
 
     
-    bool isActive = false;
     public void PlayFlashEffect()
     {
         GameObject spawenedFLash = Instantiate(_flashParticle, _flashPoint.position, _flashPoint.rotation, _flashPoint);
         Destroy(spawenedFLash, 5.0f);
     }
 
-    public override void PickupItem()
+    public override void UsePowerup()
     {
         if (isActive == false)
         {
@@ -36,21 +33,13 @@ public class AmplifyingGem : Pickup
     IEnumerator PowerUpWearOff(float waitTime)
     {
         GameObject.FindWithTag("PlayerBullet").GetComponent<Bullet>().IncreaseAttackDamage(attackMultiplier); // add boost
+        Debug.Log("gem Active");
         yield return new WaitForSeconds(waitTime);
         GameObject.FindWithTag("PlayerBullet").GetComponent<Bullet>().RevertAttackDamage(); // remove boost
         isActive = false;
+        Debug.Log("gem deActive");
 
     }
 
-   /*void Update()
-    {
-        if (isActive == true)
-        {
-            activeItem.SetActive(true);
-        }
-        else if (isActive == false)
-        {
-            activeItem.SetActive(false);
-        }
-    }*/
+    
 }

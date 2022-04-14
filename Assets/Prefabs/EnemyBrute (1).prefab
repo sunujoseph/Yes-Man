@@ -156,7 +156,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4715673e558de634ebe9dcb103603942, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -242,11 +242,3 @@ MonoBehaviour:
   itemsToDrop:
   - {fileID: 316530380625023437, guid: 5f2570b4c69fe92499eec2679e40fba9, type: 3}
   - {fileID: 2961968517165157301, guid: 1b1940a66c1a1e7438e3d2025ab8b42f, type: 3}
-  - {fileID: 272517873010838419, guid: 852e4ebb7f40ac8439a0a4c01ab5af48, type: 3}
-  - {fileID: 272517873010838419, guid: 3834367e6f62e964bba9a8d68a1258ea, type: 3}
-  - {fileID: 272517873010838419, guid: 50620bd496166084f9d76a54f875b889, type: 3}
-  - {fileID: 272517873010838419, guid: 8d467ad24eed3cd49ae68da7a254100b, type: 3}
-  - {fileID: 272517873010838419, guid: fd85e076f4f38c140b1b9ccb36901466, type: 3}
-  - {fileID: 272517873010838419, guid: 9f6b6cd2a133bcd4bb13650d559dfb51, type: 3}
-  - {fileID: 272517873010838419, guid: 736799e08f5468a4dbee2b20a1b477ca, type: 3}
-  - {fileID: 272517873010838419, guid: c7ab8026a217e6848a404e6cd1ed7831, type: 3}

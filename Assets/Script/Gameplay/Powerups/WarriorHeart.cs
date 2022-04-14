@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WarriorHeart : Pickup
+public class WarriorHeart : Powerup
 {
     //Increase max health + heals fully
     public float maxHP_Multiplier = 1.5f;
@@ -12,14 +12,14 @@ public class WarriorHeart : Pickup
 
     public GameObject _flashParticle;
 
-    bool isActive = false;
+    
     public void PlayFlashEffect()
     {
         GameObject spawenedFLash = Instantiate(_flashParticle, _flashPoint.position, _flashPoint.rotation, _flashPoint);
         Destroy(spawenedFLash, 5.0f);
     }
 
-    public override void PickupItem()
+    public override void UsePowerup()
     {
         if (isActive == false)
         {
@@ -39,15 +39,5 @@ public class WarriorHeart : Pickup
         isActive = false;
 
     }
-    /*void Update()
-    {
-        if (isActive == true)
-        {
-            activeItem.SetActive(true);
-        }
-        else if (isActive == false)
-        {
-            activeItem.SetActive(false);
-        }
-    }*/
+    
 }
