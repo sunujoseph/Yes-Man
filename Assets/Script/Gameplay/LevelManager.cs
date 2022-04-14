@@ -73,7 +73,7 @@ public class LevelManager : MonoBehaviour
                 timeLeft -= Time.deltaTime;
                 if (timeLeft <= 0)
                 {
-                    StartCoroutine(LevelEnd());
+                    StartCoroutine(StartNewRound());
                 }
                 break;
         }
@@ -143,7 +143,7 @@ public class LevelManager : MonoBehaviour
 
         yield return new WaitForSeconds(5);
 
-        timeLeft = 300;
+        timeLeft = 30;
 
         spawner1.SetActive(true);
 
@@ -154,7 +154,9 @@ public class LevelManager : MonoBehaviour
 
         yield return new WaitForSeconds(5);
 
-        timeLeft = 300;
+        currentRound++;
+
+        timeLeft = 50;
 
         if (currentRound == 2)
         {
