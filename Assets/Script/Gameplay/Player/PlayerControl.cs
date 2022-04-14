@@ -48,11 +48,14 @@ public class PlayerControl : MonoBehaviour
     private float dashCounter;
     private float dashCoolCounter;
 
-    Powerup currentSelectedPowerup;
+    
 
     [SerializeField] FlashImage _flashImage;
 
     public List<GameObject> itemsToDrop = new List<GameObject>();
+
+    
+
     private void Awake()
     {
         if (_rb == null)
@@ -94,11 +97,15 @@ public class PlayerControl : MonoBehaviour
         DisplayMana();
         DisplayGold();
 
-        ActivatePowerup();
+        
         Die();
         
     }
 
+    public int CheckGold()
+    {
+        return currentGold;
+    }
 
     // Update is called once per frame
     void FixedUpdate()
@@ -221,21 +228,24 @@ public class PlayerControl : MonoBehaviour
         currentGold += goldValue;
         if (currentGold >= 10)
         {
-            Shooping();
+            //Shooping();
 
         }
-    } 
+    }
 
+    public void SpendGold(int cost)
+    {
+        currentGold -= cost;
+
+        if (currentGold < 0)
+        {
+            currentGold = 0;
+        }
+    }
 
     //Powerups
 
-    void ActivatePowerup()
-    {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            currentSelectedPowerup.UsePowerup();
-        }
-    }
+    
     public void DecreaseDashCooldown(float cooldownMultiplier)
     {
         dashCooldown = startingDashCooldown * cooldownMultiplier;
@@ -295,4 +305,5 @@ public class PlayerControl : MonoBehaviour
 
         Instantiate(itemsToDrop[itemKey], transform.position, Quaternion.Euler(0f, 0f, 0f));
     }
+    
 }

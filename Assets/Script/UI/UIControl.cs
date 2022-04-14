@@ -14,7 +14,8 @@ public class UIControl : MonoBehaviour
     public Text _timeLeft;
     public Text _currentRound;
 
-    
+
+    public Text ampGemAmountText, bottleAmountText, goblinAmountText, nagaAmountText, potionAmountText, cloakAmountText, shoesAmountText, heartAmountText;
     void Awake()
     {
         instance = this;

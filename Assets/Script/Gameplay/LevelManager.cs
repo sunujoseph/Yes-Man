@@ -6,8 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
+    
+
     public bool isPaused = false;
-    public float timeLeft = 300;
+    public float timeLeft = 30;
     float timeLeftInt;
 
     public static LevelManager instance;
@@ -40,7 +42,7 @@ public class LevelManager : MonoBehaviour
         {
             ActiveScene = "Main";
             currentRound = 1;
-            StartCoroutine(StartFirstRound());
+            StartFirstRound();
         }
         else if (sceneName == "BossScene")
         {
@@ -73,7 +75,8 @@ public class LevelManager : MonoBehaviour
                 timeLeft -= Time.deltaTime;
                 if (timeLeft <= 0)
                 {
-                    StartCoroutine(StartNewRound());
+                    StartNewRound();
+                    timeLeft = 60;
                 }
                 break;
         }
@@ -119,9 +122,11 @@ public class LevelManager : MonoBehaviour
 
     public void NewRound()
     {
-        currentRound++;
+        currentRound += 1;
 
-        StartCoroutine(StartNewRound());
+        StartNewRound();
+
+        newRound = false;
 
         if (currentRound >= 5)
         {
@@ -135,28 +140,31 @@ public class LevelManager : MonoBehaviour
     }
     void DisplayTime()
     {
+        if (timeLeft < 0)
+        {
+            timeLeft = 0;
+        }
         timeLeftInt = (int)timeLeft;
+        
         UIControl.instance._timeLeft.text = (timeLeftInt.ToString());
     }
-    public IEnumerator StartFirstRound()
+    public void StartFirstRound()
     { 
 
-        yield return new WaitForSeconds(5);
 
         timeLeft = 30;
 
         spawner1.SetActive(true);
 
     }
-    public IEnumerator StartNewRound()
+    public void StartNewRound()
     {
         AudioManager.instance.PlayRoundWin();
 
-        yield return new WaitForSeconds(5);
 
-        currentRound++;
+        currentRound += 1;
 
-        timeLeft = 50;
+        timeLeft = 60;
 
         if (currentRound == 2)
         {
@@ -175,4 +183,7 @@ public class LevelManager : MonoBehaviour
         }
         
     }
+
+
+
 }

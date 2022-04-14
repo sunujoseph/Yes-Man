@@ -41,14 +41,37 @@ public class Bottle_Whispers : Powerup
 
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public override void CheckAmount()
     {
-        if (collision.tag == "Player")
+        if (itemAmount > 0)
         {
-            Debug.Log("Picked up");
             UsePowerup();
-            Destroy(gameObject);
+            itemAmount -= 1;
+            UIControl.instance.bottleAmountText.text = itemAmount.ToString();
         }
     }
+
+    public override void UpdateAmountText()
+    {
+        UIControl.instance.bottleAmountText.text = itemAmount.ToString();
+    }
+
+    public override void KeyActivate()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            CheckAmount();
+        }
+    }
+
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.tag == "Player")
+    //    {
+    //        Debug.Log("Picked up");
+    //        UsePowerup();
+    //        Destroy(gameObject);
+    //    }
+    //}
 
 }
