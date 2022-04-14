@@ -642,6 +642,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 5408762063844740231, guid: 9cfc44083eb80e140b9f906eaca021d3, type: 3}
+      propertyPath: speed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5408762063844740231, guid: 9cfc44083eb80e140b9f906eaca021d3, type: 3}
+      propertyPath: dashRange
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5408762063844740231, guid: 9cfc44083eb80e140b9f906eaca021d3, type: 3}
+      propertyPath: lineOfSite
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cfc44083eb80e140b9f906eaca021d3, type: 3}
 --- !u!1 &337276583
@@ -6475,6 +6487,7 @@ MonoBehaviour:
   levelMusic: {fileID: 1977559336}
   gameOverMusic: {fileID: 0}
   winMusic: {fileID: 0}
+  dashSFX: {fileID: 0}
   sfx: []
 --- !u!4 &2059232548
 Transform:
