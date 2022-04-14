@@ -26,7 +26,7 @@ public class Boss : MonoBehaviour
     public Slider healthBar;
     
     
-    public float arrowForce = 20f;
+    public float arrowForce = 80f;
     public GameObject arrows; // Bullet game object
 
     public GameObject arrowParent; // Shot Pos

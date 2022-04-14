@@ -16,7 +16,7 @@ public class LevelManager : MonoBehaviour
 
     public int currentRound;
     
-
+    
     public bool newRound;
 
     public GameObject boss;
@@ -73,7 +73,7 @@ public class LevelManager : MonoBehaviour
                 timeLeft -= Time.deltaTime;
                 if (timeLeft <= 0)
                 {
-                    StartCoroutine(LevelEnd());
+                    StartCoroutine(StartNewRound());
                 }
                 break;
         }
@@ -136,14 +136,14 @@ public class LevelManager : MonoBehaviour
     void DisplayTime()
     {
         timeLeftInt = (int)timeLeft;
-        UIControl.instance._currentRound.text = (timeLeftInt.ToString());
+        UIControl.instance._timeLeft.text = (timeLeftInt.ToString());
     }
     public IEnumerator StartFirstRound()
     { 
 
         yield return new WaitForSeconds(5);
 
-        timeLeft = 300;
+        timeLeft = 30;
 
         spawner1.SetActive(true);
 
@@ -154,7 +154,9 @@ public class LevelManager : MonoBehaviour
 
         yield return new WaitForSeconds(5);
 
-        timeLeft = 300;
+        currentRound++;
+
+        timeLeft = 50;
 
         if (currentRound == 2)
         {
