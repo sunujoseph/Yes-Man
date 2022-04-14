@@ -10,7 +10,7 @@ public class Boss : MonoBehaviour
 
     public GameObject portal;
 
-    public GameObject winScreen;
+    //public GameObject winScreen;
 
     public float damage = 2.0f;
 
@@ -40,7 +40,7 @@ public class Boss : MonoBehaviour
         _rb = GetComponent<Rigidbody2D>();
 
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        winScreen.SetActive(false);
+        //winScreen.SetActive(false);
     }
 
     void Update()
@@ -150,7 +150,7 @@ public class Boss : MonoBehaviour
 
             Destroy(gameObject);
 
-            StartCoroutine(openWinScreen());
+            //StartCoroutine(openWinScreen());
             Instantiate(portal, new Vector2(0,0), Quaternion.identity);
         }
     }
@@ -172,13 +172,13 @@ public class Boss : MonoBehaviour
         }
     }
 
-    IEnumerator openWinScreen()
-    {
-        winScreen.SetActive(true);
+    //IEnumerator openWinScreen()
+    //{
+       // winScreen.SetActive(true);
 
-        yield return new WaitForSeconds(5.0f);
+    //    yield return new WaitForSeconds(5.0f);
 
-        winScreen.SetActive(false);
-    }
+   //     winScreen.SetActive(false);
+  //  }
 
 }
