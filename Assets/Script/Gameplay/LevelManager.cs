@@ -136,7 +136,7 @@ public class LevelManager : MonoBehaviour
     void DisplayTime()
     {
         timeLeftInt = (int)timeLeft;
-        UIControl.instance._currentRound.text = (timeLeftInt.ToString());
+        UIControl.instance._timeLeft.text = (timeLeftInt.ToString());
     }
     public IEnumerator StartFirstRound()
     { 
