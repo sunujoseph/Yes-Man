@@ -150,7 +150,7 @@ MonoBehaviour:
   enemyHealth: 20
   maxHealth: 10
   speed: 7
-  lineOfSite: 8
+  lineOfSite: 20
   direction: {x: 0, y: 0, z: 0}
   enemyDeathCounter: 0
   deathEffect: {fileID: 1761458857357641057, guid: e619da6a266b84940816d20879507683, type: 3}

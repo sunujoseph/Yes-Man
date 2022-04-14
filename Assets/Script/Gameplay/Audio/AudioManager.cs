@@ -9,6 +9,7 @@ public class AudioManager : MonoBehaviour
     public AudioSource levelMusic;
     public AudioSource gameOverMusic;
     public AudioSource winMusic;
+    public AudioSource dashSFX;
 
     public AudioSource[] sfx;
 
@@ -35,5 +36,16 @@ public class AudioManager : MonoBehaviour
     {
         sfx[sfxToPlay].Stop();
         sfx[sfxToPlay].Play();
+    }
+    public void EnemyDash()
+    {
+        dashSFX.Stop();
+
+        dashSFX.Play();
+    }
+
+    public void EnemyGag()
+    {
+
     }
 }

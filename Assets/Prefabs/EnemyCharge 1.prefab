@@ -160,6 +160,6 @@ MonoBehaviour:
   - {fileID: 2961968517165157301, guid: 1b1940a66c1a1e7438e3d2025ab8b42f, type: 3}
   - {fileID: 316530380625023437, guid: 5f2570b4c69fe92499eec2679e40fba9, type: 3}
   dashRange: 10
-  dashRate: 0.7
+  dashRate: 0.5
   nextDashCounter: 0
   dashSpeed: 6

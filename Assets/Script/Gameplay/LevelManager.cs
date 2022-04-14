@@ -7,7 +7,8 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
     public bool isPaused = false;
-    
+    public float timeLeft = 300;
+    float timeLeftInt;
 
     public static LevelManager instance;
 
@@ -62,7 +63,20 @@ public class LevelManager : MonoBehaviour
 
     void Update()
     {
-        
+        switch (currentRound)
+        {
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+                timeLeft -= Time.deltaTime;
+                if (timeLeft <= 0)
+                {
+                    StartCoroutine(LevelEnd());
+                }
+                break;
+        }
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -75,9 +89,8 @@ public class LevelManager : MonoBehaviour
         }
 
         DisplayRound();
-        
+        DisplayTime();
 
-        
     }
     public void PauseUnpause()
     {
@@ -112,7 +125,7 @@ public class LevelManager : MonoBehaviour
 
         if (currentRound >= 5)
         {
-            SceneManager.LoadScene(6);
+            SceneManager.LoadScene(5);
         }
     }
 
@@ -120,13 +133,17 @@ public class LevelManager : MonoBehaviour
     {
         UIControl.instance._currentRound.text = ("Round " + currentRound.ToString());
     }
-   
+    void DisplayTime()
+    {
+        timeLeftInt = (int)timeLeft;
+        UIControl.instance._currentRound.text = (timeLeftInt.ToString());
+    }
     public IEnumerator StartFirstRound()
     { 
 
         yield return new WaitForSeconds(5);
 
-        
+        timeLeft = 300;
 
         spawner1.SetActive(true);
 
@@ -137,7 +154,7 @@ public class LevelManager : MonoBehaviour
 
         yield return new WaitForSeconds(5);
 
-        
+        timeLeft = 300;
 
         if (currentRound == 2)
         {
@@ -156,6 +173,4 @@ public class LevelManager : MonoBehaviour
         }
         
     }
-
-    
 }
