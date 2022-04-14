@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  portal: {fileID: 3053192166029557331, guid: c45dd4069942c3f409d6cf807f056f2e, type: 3}
+  portal: {fileID: 3736707039902178522, guid: b5a4ff4803d59c14db0f9642034c3239, type: 3}
   damage: 2
   enemyHealth: 1000
   speed: 5
