@@ -38,5 +38,15 @@ public class HP_Potion : Powerup
         isActive = false;
 
     }
-    
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            Debug.Log("Picked up");
+            UsePowerup();
+            Destroy(gameObject);
+        }
+    }
 }

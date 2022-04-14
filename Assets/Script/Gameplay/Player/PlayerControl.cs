@@ -286,9 +286,12 @@ public class PlayerControl : MonoBehaviour
     }
     public void Shooping()
     {
+        Debug.Log("10 gold !");
         currentGold -= 10;
         float randomItem = Random.Range(0, itemsToDrop.Count);
         int itemKey = Mathf.RoundToInt(randomItem);
+
+        Debug.Log("Item: " + itemsToDrop[itemKey]);
 
         Instantiate(itemsToDrop[itemKey], transform.position, Quaternion.Euler(0f, 0f, 0f));
     }
